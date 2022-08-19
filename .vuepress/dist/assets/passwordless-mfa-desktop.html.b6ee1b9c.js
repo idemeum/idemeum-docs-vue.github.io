@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-4ac023a2","path":"/passwordless-mfa-desktop.html","title":"Passwordless MFA for desktop","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Overview","slug":"overview","children":[]}],"git":{},"filePathRelative":"passwordless-mfa-desktop.md"}');export{e as data};

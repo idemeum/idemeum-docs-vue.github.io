@@ -5,6 +5,7 @@ const { nprogressPlugin } = require('@vuepress/plugin-nprogress')
 
 module.exports = {
   lang: 'en-US',
+  dest: './docs/docs',
   title: 'idemeum docs',
   description: 'One platform to access your apps and infrastructure, without passwords',
 	
