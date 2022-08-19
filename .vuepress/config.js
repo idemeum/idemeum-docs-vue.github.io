@@ -7,7 +7,7 @@ module.exports = {
   lang: 'en-US',
   dest: './docs/docs',
   title: 'idemeum docs',
-  base: '/idemeum-docs-vue.github.io/',
+  base: 'idemeum-docs-vue.github.io/',
   description: 'One platform to access your apps and infrastructure, without passwords',
 	
 	theme: defaultTheme({
