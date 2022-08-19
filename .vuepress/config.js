@@ -13,7 +13,7 @@ module.exports = {
 	    // default theme config
 		logo: '/logo.png',
 		docsDir: 'docs',
-		base: '/',
+		base: '/docs',
 		sidebarDepth: 0,
 		lastUpdated: 'Last Updated',
 	    navbar: [
