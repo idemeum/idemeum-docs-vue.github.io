@@ -9,7 +9,7 @@
 <h2 id="platform-components" tabindex="-1"><a class="header-anchor" href="#platform-components" aria-hidden="true">#</a> Platform components</h2>
 <p>Here is a high level overview of idemeum platform components:</p>
 <p><img src="@source/images/architecture.png" alt="Architecture"></p>
-<h3 id="_1-passwordless-mfa" tabindex="-1"><a class="header-anchor" href="#_1-passwordless-mfa" aria-hidden="true">#</a> <a href="/mfa-overview.html" target="_blank" rel="noopener noreferrer">1. Passwordless MFA<ExternalLinkIcon/></a></h3>
+<h3 id="_1-passwordless-mfa" tabindex="-1"><a class="header-anchor" href="#_1-passwordless-mfa" aria-hidden="true">#</a> <RouterLink to="/mfa-overview.html">1. Passwordless MFA</RouterLink></h3>
 <p><strong>Passwordless Multi-Factor Authentication (MFA)</strong> is a mobile app that allows to replace password with biometrics.</p>
 <ul>
 <li><strong>Multi-factor:</strong> it is multi-factor as for each authentication two factors are used: <em>something you have</em> - certificate that is provisioned on a mobile device, and <em>something you are</em> - mobile biometric sensors such as Face ID.</li>
@@ -23,7 +23,7 @@
 <li>With your own Identity Provider such as Okta or Azure AD. We support various SAML <a href="https://integrations.idemeum.com/tag/identity-providers/" target="_blank" rel="noopener noreferrer">integrations<ExternalLinkIcon/></a> today.</li>
 </ol>
 </div>
-<h3 id="_2-single-sign-on" tabindex="-1"><a class="header-anchor" href="#_2-single-sign-on" aria-hidden="true">#</a> <a href="/application-catalog.html" target="_blank" rel="noopener noreferrer">2. Single Sign-On<ExternalLinkIcon/></a></h3>
+<h3 id="_2-single-sign-on" tabindex="-1"><a class="header-anchor" href="#_2-single-sign-on" aria-hidden="true">#</a> <RouterLink to="/application-catalog.html">2. Single Sign-On</RouterLink></h3>
 <p>idemeum offers a fully featured Single Sign-On Identity Provider (SAML &amp; OIDC).</p>
 <ul>
 <li><strong>Integrations:</strong> you can integrate <a href="https://integrations.idemeum.com" target="_blank" rel="noopener noreferrer">hundreds of SaaS applications<ExternalLinkIcon/></a> using SAML in order to offer one-click centralized access.</li>
@@ -33,7 +33,7 @@
 <li><strong>Various features:</strong> RBAC, group management, auditing, local biometrics and more.</li>
 </ul>
 <p>Navigate to <a href="/application-catalog.html" target="_blank" rel="noopener noreferrer">Single Sign-On<ExternalLinkIcon/></a> section to learn more about idemeum Identity Provider.</p>
-<h3 id="_3-cloud-radius" tabindex="-1"><a class="header-anchor" href="#_3-cloud-radius" aria-hidden="true">#</a> <a href="/cloud-radius-overview.html" target="_blank" rel="noopener noreferrer">3. Cloud Radius<ExternalLinkIcon/></a></h3>
+<h3 id="_3-cloud-radius" tabindex="-1"><a class="header-anchor" href="#_3-cloud-radius" aria-hidden="true">#</a> <RouterLink to="/cloud-radius-overview.html">3. Cloud Radius</RouterLink></h3>
 <p>idemeum offers Cloud Radius instance so that you can control access to you VPN, Wi-Fi, and network resources. Paired with <strong>Passwordless MFA</strong> users can access any network resource such as VPN without needing to have passwords. Just use mobile application to approve login with biometrics.</p>
 <p>Deploy managed Radius authentication in your organization without building, maintaining, or monitoring physical servers.</p>
 <p>Check our <a href="https://integrations.idemeum.com/" target="_blank" rel="noopener noreferrer">integrations portal<ExternalLinkIcon/></a> to see what Radius integrations we support today. Our platform is quite flexible, so if certified integration is missing, we are happy to add it.</p>
@@ -44,7 +44,7 @@
 <li><strong>External user sources:</strong> idemeum can integrate with external user sources such as HRMS systems, payroll providers, or existing identity providers.</li>
 </ul>
 <p>Again, check our integrations catalog to see what <a href="https://integrations.idemeum.com/tag/user-source/" target="_blank" rel="noopener noreferrer">user sources<ExternalLinkIcon/></a> we support today.</p>
-<h3 id="_5-secure-password-vault" tabindex="-1"><a class="header-anchor" href="#_5-secure-password-vault" aria-hidden="true">#</a> <a href="/password-vault-overview.html" target="_blank" rel="noopener noreferrer">5. Secure Password Vault<ExternalLinkIcon/></a></h3>
+<h3 id="_5-secure-password-vault" tabindex="-1"><a class="header-anchor" href="#_5-secure-password-vault" aria-hidden="true">#</a> <RouterLink to="/password-vault-overview.html">5. Secure Password Vault</RouterLink></h3>
 <p>idemeum offers a secure cloud vault to store passwords for your employees and privileged accounts.</p>
 <ul>
 <li><strong>Zero knowledge:</strong> each user gets access to password vault, and the credentials are encrypted with the keys that are kept on user mobile devices. What that means is that we do not have access to your passwords. And if our cloud gets compromised, none of your passwords wil ever get leaked. Decryption happens on the client side, i.e. your browser, mobile app, and browser extension.</li>
@@ -54,7 +54,7 @@
 <div class="custom-container warning"><p class="custom-container-title">We don't see your passwords</p>
 <p>Even though our password vault is cloud based, we do not see your password as they are encrypted on the client side. Check our <a href="./security-whitepaper">security white paper</a> to learn more about our security and encryption principles.</p>
 </div>
-<h3 id="_6-zero-trust-remote-access" tabindex="-1"><a class="header-anchor" href="#_6-zero-trust-remote-access" aria-hidden="true">#</a> <a href="/zero-trust/zero-trust-overview.html" target="_blank" rel="noopener noreferrer">6. Zero-trust remote access <badge type="warning" text="Early access"/><ExternalLinkIcon/></a></h3>
+<h3 id="_6-zero-trust-remote-access" tabindex="-1"><a class="header-anchor" href="#_6-zero-trust-remote-access" aria-hidden="true">#</a> <RouterLink to="/zero-trust/zero-trust-overview.html">6. Zero-trust remote access <badge type="warning" text="Early access"/></RouterLink></h3>
 <p>idemeum offers a simple and secure way to access your infrastructure from the same platform.</p>
 <ul>
 <li><strong>Passwordless:</strong> you access infrastructure resources without passwords. Users leverage Passwordless MFA to login to an idemeum portal and then access various applications or servers.</li>
