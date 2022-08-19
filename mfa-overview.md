@@ -15,7 +15,7 @@ idemeum is highly secure as it uses the combination of 2 factors to authenticate
 * **PKI certificates** that are securely stored in hardware-backed storage on a mobile device. This is considered a *something you have* factor.
 * Biometrics that are requested using built-in mobile biometric sensors (i.e. Face ID scanner). This is considered a *something you are* factor.
 
-You can learn more about security in our [white paper](/security-whitepaper.html).
+You can learn more about security in our [white paper](./security-whitepaper.html).
 
 ## How is it decentralized?
 When users install idemeum mobile application they verify personal identity claims, such as *email address*, *phone number* or *ID document*. We do not store any of users' personal information in our cloud. idemeum offers a decentralized design with personal identity claims persisted only in the mobile application.

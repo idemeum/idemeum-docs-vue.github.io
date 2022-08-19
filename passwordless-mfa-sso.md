@@ -22,7 +22,7 @@ For instance, if you already have Okta, and users access any application protect
 Integrating with idemeum is very simple, and we document everything in detail. Here are the steps you can take to integrate idemeum with your existing Identity Provider. 
 
 * **Step 1:** Install idemeum app and [create idemeum tenant](./self-service-onboarding.html) for your organization.
-* **Step 2:** Configure user source for user onboarding and mapping between personal and corporate identity claims. Please, refer to [onboarding overview](/employee-onboarding.html) and [user source](/integration-with-hr-system.html) configuration manuals to understand why we need user source configured.
+* **Step 2:** Configure user source for user onboarding and mapping between personal and corporate identity claims. Please, refer to [onboarding overview](./employee-onboarding.html) and [user source](./integration-with-hr-system.html) configuration manuals to understand why we need user source configured.
 * **Step 3:** Navigate to [integrations portal](https://integrations.idemeum.com) and find the integration guide for your Identity Provider. We have detailed steps for how to set up SAML federation between idemeum and your IDP. 
 	* Here are some major Identity Providers that idemeum can integrate with:
 		* [Okta](https://integrations.idemeum.com/okta/)

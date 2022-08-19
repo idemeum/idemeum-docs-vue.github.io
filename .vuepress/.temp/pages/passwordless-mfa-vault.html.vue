@@ -6,7 +6,7 @@
 <p>Every idemeum license comes with Password Vault included by default. Once you have your idemeum tenant set up, you can start inviting users, who in turn will be able to use password vault, create applications, and share credentails with other employees.</p>
 <ul>
 <li><strong>Step 1:</strong> Install idemeum app and <RouterLink to="/self-service-onboarding.html">create idemeum tenant</RouterLink> for your organization.</li>
-<li><strong>Step 2:</strong> Configure user source for user onboarding and mapping between personal and corporate identity claims. Please, refer to <a href="/employee-onboarding.html" target="_blank" rel="noopener noreferrer">onboarding overview<ExternalLinkIcon/></a> and <a href="/integration-with-hr-system.html" target="_blank" rel="noopener noreferrer">user source<ExternalLinkIcon/></a> configuration manuals to understand why we need user source configured.</li>
+<li><strong>Step 2:</strong> Configure user source for user onboarding and mapping between personal and corporate identity claims. Please, refer to <RouterLink to="/employee-onboarding.html">onboarding overview</RouterLink> and <RouterLink to="/integration-with-hr-system.html">user source</RouterLink> configuration manuals to understand why we need user source configured.</li>
 <li><strong>Step 3</strong>: Start creating password applications and sharing credentials with other user leveraging password vault.</li>
 </ul>
 </div></template>
