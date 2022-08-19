@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-66e47bec\",\"path\":\"/password-vault-overview.html\",\"title\":\"Password Vault overview\",\"lang\":\"en-US\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{},\"filePathRelative\":\"password-vault-overview.md\"}")

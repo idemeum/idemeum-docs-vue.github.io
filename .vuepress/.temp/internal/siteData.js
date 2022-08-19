@@ -1,0 +1,1 @@
+export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"idemeum docs\",\"description\":\"One platform to access your apps and infrastructure, without passwords\",\"head\":[],\"locales\":{}}")

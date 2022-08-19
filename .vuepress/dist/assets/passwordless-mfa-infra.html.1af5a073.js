@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-707487ae","path":"/passwordless-mfa-infra.html","title":"Passwordless MFA for infrastructure","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{},"filePathRelative":"passwordless-mfa-infra.md"}');export{a as data};
