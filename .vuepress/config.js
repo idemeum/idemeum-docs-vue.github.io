@@ -7,13 +7,13 @@ module.exports = {
   lang: 'en-US',
   dest: './docs/docs',
   title: 'idemeum docs',
+  base: '/idemeum-docs-vue.github.io',
   description: 'One platform to access your apps and infrastructure, without passwords',
 	
 	theme: defaultTheme({
 	    // default theme config
 		logo: '/logo.png',
 		docsDir: 'docs',
-		base: '/idemeum-docs-vue.github.io',
 		sidebarDepth: 0,
 		lastUpdated: 'Last Updated',
 	    navbar: [
