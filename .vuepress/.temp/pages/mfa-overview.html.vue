@@ -10,7 +10,7 @@
 <li><strong>PKI certificates</strong> that are securely stored in hardware-backed storage on a mobile device. This is considered a <em>something you have</em> factor.</li>
 <li>Biometrics that are requested using built-in mobile biometric sensors (i.e. Face ID scanner). This is considered a <em>something you are</em> factor.</li>
 </ul>
-<p>You can learn more about security in our <RouterLink to="/security-whitepaper.html">white paper</RouterLink>.</p>
+<p>You can learn more about security in our <a href="/security-whitepaper.html" target="_blank" rel="noopener noreferrer">white paper<ExternalLinkIcon/></a>.</p>
 <h2 id="how-is-it-decentralized" tabindex="-1"><a class="header-anchor" href="#how-is-it-decentralized" aria-hidden="true">#</a> How is it decentralized?</h2>
 <p>When users install idemeum mobile application they verify personal identity claims, such as <em>email address</em>, <em>phone number</em> or <em>ID document</em>. We do not store any of users' personal information in our cloud. idemeum offers a decentralized design with personal identity claims persisted only in the mobile application.</p>
 <h2 id="how-to-use-idemeum-mfa-for-login" tabindex="-1"><a class="header-anchor" href="#how-to-use-idemeum-mfa-for-login" aria-hidden="true">#</a> How to use idemeum MFA for login?</h2>

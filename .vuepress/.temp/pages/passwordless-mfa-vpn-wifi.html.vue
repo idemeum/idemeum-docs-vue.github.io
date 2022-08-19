@@ -8,7 +8,7 @@
 <p>Integrating with idemeum is very simple, and we document everything in detail. Here are the steps you can take to integrate idemeum with your Radius clients.</p>
 <ul>
 <li><strong>Step 1:</strong> Install idemeum app and <RouterLink to="/self-service-onboarding.html">create idemeum tenant</RouterLink> for your organization.</li>
-<li><strong>Step 2:</strong> Configure user source for user onboarding and mapping between personal and corporate identity claims. Please, refer to <RouterLink to="/employee-onboarding.html">onboarding overview</RouterLink> and <RouterLink to="/integration-with-hr-system.html">user source</RouterLink> configuration manuals to understand why we need user source configured.</li>
+<li><strong>Step 2:</strong> Configure user source for user onboarding and mapping between personal and corporate identity claims. Please, refer to <a href="/employee-onboarding.html" target="_blank" rel="noopener noreferrer">onboarding overview<ExternalLinkIcon/></a> and <a href="/integration-with-hr-system.html" target="_blank" rel="noopener noreferrer">user source<ExternalLinkIcon/></a> configuration manuals to understand why we need user source configured.</li>
 <li><strong>Step 3:</strong> Set up idemeum Cloud Radius instance by following this <RouterLink to="/how-to-set-up-radius-integration.html">guide</RouterLink>.</li>
 <li><strong>Step 4:</strong> Navigate to <a href="https://integrations.idemeum.com" target="_blank" rel="noopener noreferrer">integrations portal<ExternalLinkIcon/></a> and find the integration guide for your VPN / Wi-Fi, or any other integration that you want to connect to Cloud Radius instance.</li>
 </ul>
