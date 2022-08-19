@@ -13,7 +13,7 @@ module.exports = {
 	    // default theme config
 		logo: '/logo.png',
 		docsDir: 'docs',
-		base: '/docs',
+		base: '/idemeum-docs-vue.github.io',
 		sidebarDepth: 0,
 		lastUpdated: 'Last Updated',
 	    navbar: [
