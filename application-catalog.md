@@ -2,7 +2,7 @@
 
 ## Overview
 
-idemeum offers fully-featured Single Sign-On identity provider. You can integrate most SaaS applications with idemeum using SAML protocol in order to offer your employees one-click access to all applications. When paired with [Passwordless MFA](mfa-overview.html), idemeum offers true passwordless experience - employees access application catalog with [Passwordless MFA](mfa-overview.html) and then seamlessly launch any integrated application without typing any passwords or one time codes. 
+idemeum offers fully-featured Single Sign-On identity provider. You can integrate most SaaS applications with idemeum using SAML protocol in order to offer your employees one-click access to all applications. When paired with [Passwordless MFA](./mfa-overview.html), idemeum offers true passwordless experience - employees access application catalog with [Passwordless MFA](./mfa-overview.html) and then seamlessly launch any integrated application without typing any passwords or one time codes. 
 
 ## Supported applications
 

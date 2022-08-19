@@ -16,7 +16,7 @@ Here is a high level overview of idemeum platform components:
 
 ![Architecture](./images/architecture.png)
 
-### [1. Passwordless MFA](/mfa-overview.html)
+### [1. Passwordless MFA](./mfa-overview.html)
 
 **Passwordless Multi-Factor Authentication (MFA)** is a mobile app that allows to replace password with biometrics.
 
@@ -30,7 +30,7 @@ Passwordless MFA can be deployed:
 2. With your own Identity Provider such as Okta or Azure AD. We support various SAML [integrations](https://integrations.idemeum.com/tag/identity-providers/) today.
 :::
 
-### [2. Single Sign-On](/application-catalog.html)
+### [2. Single Sign-On](./application-catalog.html)
 idemeum offers a fully featured Single Sign-On Identity Provider (SAML & OIDC).
 
 * **Integrations:** you can integrate [hundreds of SaaS applications](https://integrations.idemeum.com) using SAML in order to offer one-click centralized access. 
@@ -41,7 +41,7 @@ idemeum offers a fully featured Single Sign-On Identity Provider (SAML & OIDC).
 
 Navigate to [Single Sign-On](/application-catalog.html) section to learn more about idemeum Identity Provider.
 
-### [3. Cloud Radius](/cloud-radius-overview.html)
+### [3. Cloud Radius](./cloud-radius-overview.html)
 idemeum offers Cloud Radius instance so that you can control access to you VPN, Wi-Fi, and network resources. Paired with **Passwordless MFA** users can access any network resource such as VPN without needing to have passwords. Just use mobile application to approve login with biometrics. 
 
 Deploy managed Radius authentication in your organization without building, maintaining, or monitoring physical servers.
@@ -56,7 +56,7 @@ idemeum offers various ways to manage users and onboarding.
 
 Again, check our integrations catalog to see what [user sources](https://integrations.idemeum.com/tag/user-source/) we support today. 
 
-### [5. Secure Password Vault](/password-vault-overview.html)
+### [5. Secure Password Vault](./password-vault-overview.html)
 idemeum offers a secure cloud vault to store passwords for your employees and privileged accounts. 
 
 * **Zero knowledge:** each user gets access to password vault, and the credentials are encrypted with the keys that are kept on user mobile devices. What that means is that we do not have access to your passwords. And if our cloud gets compromised, none of your passwords wil ever get leaked. Decryption happens on the client side, i.e. your browser, mobile app, and browser extension. 
@@ -67,7 +67,7 @@ idemeum offers a secure cloud vault to store passwords for your employees and pr
 Even though our password vault is cloud based, we do not see your password as they are encrypted on the client side. Check our [security white paper](./security-whitepaper) to learn more about our security and encryption principles.
 :::
 
-### [6. Zero-trust remote access <badge type="warning" text="Early access"/>](/zero-trust/zero-trust-overview.html)
+### [6. Zero-trust remote access <badge type="warning" text="Early access"/>](./zero-trust/zero-trust-overview.html)
 idemeum offers a simple and secure way to access your infrastructure from the same platform. 
 
 * **Passwordless:** you access infrastructure resources without passwords. Users leverage Passwordless MFA to login to an idemeum portal and then access various applications or servers. 

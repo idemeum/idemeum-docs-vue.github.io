@@ -20,18 +20,18 @@ For workforce access idemeum allows to eliminate passwords across your organizat
 
 ## Our products
 
-### [Passwordless MFA](/mfa-overview.html)
+### [Passwordless MFA](./mfa-overview.html)
 
 idemeum Passwordless MFA allows organization to implement strong authentication for employees to access any company resource - applications, VPN, WiFi, infrastructure and more. Instead of passwords, employees access any resource with biometrics, leveraging mobile app or platform authenticators.
 
-### [Passwordless Single Sign-On](/application-catalog.html)
+### [Passwordless Single Sign-On](./application-catalog.html)
 
 idemeum offers fully-featured SAML Single Sign-On provider that is very easy to set up and offers hundreds of [integrations](https://integrations.idemeum.com). We offer many features including account provisioning, RBAC, user management, universal catalog and more.
 
-### [Password Vault](/password-vault-overview.html)
+### [Password Vault](./password-vault-overview.html)
 
 idemeum offers secure Password Vault that does not need a master password, and is protected by biometrics and certificates instead. Accessible across browsers, extensions, and mobile devices, idemeum Password Vault offers zero-knowledge encryption, credential sharing, and autofill.
 
-### [Zero Trust Network Access <badge type="warning" text="Early access"/>](/zero-trust/zero-trust-overview.html)
+### [Zero Trust Network Access <badge type="warning" text="Early access"/>](./zero-trust/zero-trust-overview.html)
 
 idemeum offers remote access to company infrastructure and on-premises resources leveraging zero-trust principles. Access to on-premises applications, SSH servers, and workstations is protected with passwordless MFA and audited to maintain security and accountability.

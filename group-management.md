@@ -5,13 +5,13 @@
 idemeum allows you to create groups and put employees into them.
 
 ::: tip Local user source
-When you leverage [local user source](integration-with-hr-system.html#local-user-source) in idemeum you can simply define groups as logical entities and assign employees to these groups manually.
+When you leverage [local user source](./integration-with-hr-system.html#local-user-source) in idemeum you can simply define groups as logical entities and assign employees to these groups manually.
 
 :::
 
 ::: tip External user source
 
-If you integrate idemeum with [external user source](integration-with-hr-system.html#external-user-source), such as HR system, you can define group based on various attributes present in external source, such as country, department, etc. 
+If you integrate idemeum with [external user source](./integration-with-hr-system.html#external-user-source), such as HR system, you can define group based on various attributes present in external source, such as country, department, etc. 
 
 * For example, all my employees who are part of an **Engineering** department in HRMS will become part of **Engineering** group in idemeum.
 
