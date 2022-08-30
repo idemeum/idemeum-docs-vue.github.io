@@ -32,7 +32,7 @@
 <li><strong>Automated account provisioning:</strong> idemeum supports various protocols such as SCIM in order to automatically create accounts when employees join, and remove them when employees leave.</li>
 <li><strong>Various features:</strong> RBAC, group management, auditing, local biometrics and more.</li>
 </ul>
-<p>Navigate to <a href="/application-catalog.html" target="_blank" rel="noopener noreferrer">Single Sign-On<ExternalLinkIcon/></a> section to learn more about idemeum Identity Provider.</p>
+<p>Navigate to <RouterLink to="/application-catalog.html">Single Sign-On</RouterLink> section to learn more about idemeum Identity Provider.</p>
 <h3 id="_3-cloud-radius" tabindex="-1"><a class="header-anchor" href="#_3-cloud-radius" aria-hidden="true">#</a> <RouterLink to="/cloud-radius-overview.html">3. Cloud Radius</RouterLink></h3>
 <p>idemeum offers Cloud Radius instance so that you can control access to you VPN, Wi-Fi, and network resources. Paired with <strong>Passwordless MFA</strong> users can access any network resource such as VPN without needing to have passwords. Just use mobile application to approve login with biometrics.</p>
 <p>Deploy managed Radius authentication in your organization without building, maintaining, or monitoring physical servers.</p>
