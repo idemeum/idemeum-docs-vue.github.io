@@ -67,8 +67,8 @@ export const pagesComponents = {
   "v-64285c7e": defineAsyncComponent(() => import(/* webpackChunkName: "v-64285c7e" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/self-service-onboarding.html.vue")),
   // path: /self-service-user-recovery.html
   "v-0aebaf02": defineAsyncComponent(() => import(/* webpackChunkName: "v-0aebaf02" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/self-service-user-recovery.html.vue")),
-  // path: /zero-trust/zero-trust-overview.html
-  "v-26bb8fa9": defineAsyncComponent(() => import(/* webpackChunkName: "v-26bb8fa9" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/zero-trust/zero-trust-overview.html.vue")),
+  // path: /remote-access/secure-remote-access-overview.html
+  "v-72d50ce5": defineAsyncComponent(() => import(/* webpackChunkName: "v-72d50ce5" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/remote-access/secure-remote-access-overview.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/404.html.vue")),
 }

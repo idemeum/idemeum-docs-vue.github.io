@@ -65,8 +65,8 @@ export const pagesData = {
   "v-64285c7e": () => import(/* webpackChunkName: "v-64285c7e" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/self-service-onboarding.html.js").then(({ data }) => data),
   // path: /self-service-user-recovery.html
   "v-0aebaf02": () => import(/* webpackChunkName: "v-0aebaf02" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/self-service-user-recovery.html.js").then(({ data }) => data),
-  // path: /zero-trust/zero-trust-overview.html
-  "v-26bb8fa9": () => import(/* webpackChunkName: "v-26bb8fa9" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/zero-trust/zero-trust-overview.html.js").then(({ data }) => data),
+  // path: /remote-access/secure-remote-access-overview.html
+  "v-72d50ce5": () => import(/* webpackChunkName: "v-72d50ce5" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/remote-access/secure-remote-access-overview.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/npoturnak/Desktop/docs/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }

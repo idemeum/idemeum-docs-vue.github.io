@@ -1055,9 +1055,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Zero Trust Network Access (ZTNA) overview",
+    "title": "Secure Remote Access overview",
     "headers": [],
-    "path": "/zero-trust/zero-trust-overview.html",
+    "path": "/remote-access/secure-remote-access-overview.html",
     "pathLocale": "/",
     "extraFields": []
   },

@@ -6,13 +6,13 @@ actions:
     link: /introduction
     type: primary
 features:
-  - title: Zero Trust Network Access
+  - title: Secure Remote Access	
     details: Replace legacy VPN to access apps and infrastructure without passwords.
   - title: Password Vault
     details: Secure store, share, and auto-fill passwords.
   - title: Passwordless MFA
     details: Secure access to any company resource with biometrics.
-  - title: Single Sign-On
+  - title: Passwordless SSO
     details: Centralized one-click access to apps and infrastructure.
   - title: Automated provisioning
     details: Automatically create and remove employee SaaS app accounts.

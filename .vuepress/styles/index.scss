@@ -1,13 +1,13 @@
 :root {
 	--c-brand: #3e79f1;
-	--c-brand-light: #7766F3;
+	--c-brand-light: #333336;
 	--c-tip: #3e79f1;
 }
 
 html.dark {
   // brand colors
   --c-brand: #3e79f1;
-  	--c-brand-light: #7766F3;
+  	--c-brand-light: #FFFFFF;
   --c-tip: #3e79f1
   
 }
@@ -23,3 +23,7 @@ html.dark {
 	left: 0;
 	width: 100%;
 	height: 100%; }
+	
+.action-button.primary {
+	border:none !important;
+}

@@ -117,10 +117,10 @@ module.exports = {
 		        ],
 		      },
 		      {
-		        text: 'Zero Trust Network Access',
+		        text: 'Secure Remote Access',
 				  collapsible: true,
 		        children: [
-		          {text: 'Overview',link: '/zero-trust/zero-trust-overview.html',},
+		          {text: 'Overview',link: '/remote-access/secure-remote-access-overview.html',},
 
 		        ],
 		      },

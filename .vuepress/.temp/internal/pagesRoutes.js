@@ -32,6 +32,6 @@ export const pagesRoutes = [
   ["v-25ecf9bc","/security-whitepaper.html",{"title":"Security white paper"},["/security-whitepaper","/security-whitepaper.md"]],
   ["v-64285c7e","/self-service-onboarding.html",{"title":"Try idemeum free"},["/self-service-onboarding","/self-service-onboarding.md"]],
   ["v-0aebaf02","/self-service-user-recovery.html",{"title":"Self service user recovery"},["/self-service-user-recovery","/self-service-user-recovery.md"]],
-  ["v-26bb8fa9","/zero-trust/zero-trust-overview.html",{"title":"Zero Trust Network Access (ZTNA) overview"},["/zero-trust/zero-trust-overview","/zero-trust/zero-trust-overview.md"]],
+  ["v-72d50ce5","/remote-access/secure-remote-access-overview.html",{"title":"Secure Remote Access overview"},["/remote-access/secure-remote-access-overview","/remote-access/secure-remote-access-overview.md"]],
   ["v-3706649a","/404.html",{"title":""},["/404"]],
 ]

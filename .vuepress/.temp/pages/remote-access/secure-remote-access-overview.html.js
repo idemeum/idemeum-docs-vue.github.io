@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-72d50ce5\",\"path\":\"/remote-access/secure-remote-access-overview.html\",\"title\":\"Secure Remote Access overview\",\"lang\":\"en-US\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"remote-access/secure-remote-access-overview.md\"}")
