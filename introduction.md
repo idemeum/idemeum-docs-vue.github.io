@@ -32,6 +32,6 @@ idemeum offers fully-featured SAML Single Sign-On provider that is very easy to 
 
 idemeum offers secure Password Vault that does not need a master password, and is protected by biometrics and certificates instead. Accessible across browsers, extensions, and mobile devices, idemeum Password Vault offers zero-knowledge encryption, credential sharing, and autofill.
 
-### [Zero Trust Network Access <badge type="warning" text="Early access"/>](./zero-trust/zero-trust-overview.html)
+### [Secure Remote Access <badge type="warning" text="Early access"/>](./remote-access/secure-remote-access-overview.html)
 
 idemeum offers remote access to company infrastructure and on-premises resources leveraging zero-trust principles. Access to on-premises applications, SSH servers, and workstations is protected with passwordless MFA and audited to maintain security and accountability.

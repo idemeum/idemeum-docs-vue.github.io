@@ -398,8 +398,8 @@ export const searchIndex = [
           },
           {
             "level": 3,
-            "title": "Zero Trust Network Access",
-            "slug": "zero-trust-network-access",
+            "title": "Secure Remote Access",
+            "slug": "secure-remote-access",
             "children": []
           }
         ]
