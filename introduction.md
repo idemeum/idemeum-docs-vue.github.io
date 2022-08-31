@@ -1,4 +1,4 @@
-# Welcome to idemeum 👋
+# Welcome to idemeum
 
 ## What is idemeum?
 

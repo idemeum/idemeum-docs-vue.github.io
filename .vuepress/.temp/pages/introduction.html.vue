@@ -1,4 +1,4 @@
-<template><div><h1 id="welcome-to-idemeum-👋" tabindex="-1"><a class="header-anchor" href="#welcome-to-idemeum-👋" aria-hidden="true">#</a> Welcome to idemeum 👋</h1>
+<template><div><h1 id="welcome-to-idemeum" tabindex="-1"><a class="header-anchor" href="#welcome-to-idemeum" aria-hidden="true">#</a> Welcome to idemeum</h1>
 <h2 id="what-is-idemeum" tabindex="-1"><a class="header-anchor" href="#what-is-idemeum" aria-hidden="true">#</a> What is idemeum?</h2>
 <div class="custom-container tip"><p class="custom-container-title">Unified Passwordless Platform</p>
 <p>At idemeum we built a platform to manage access to applications and infrastructure without passwords.</p>

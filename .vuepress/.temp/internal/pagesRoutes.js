@@ -13,7 +13,7 @@ export const pagesRoutes = [
   ["v-424c9fad","/how-to-recover-device-user-guide.html",{"title":"How to recover - user guide"},["/how-to-recover-device-user-guide","/how-to-recover-device-user-guide.md"]],
   ["v-3d046675","/how-to-set-up-radius-integration.html",{"title":"How to set up Radius integration"},["/how-to-set-up-radius-integration","/how-to-set-up-radius-integration.md"]],
   ["v-f725a7c8","/integration-with-hr-system.html",{"title":"User source integration"},["/integration-with-hr-system","/integration-with-hr-system.md"]],
-  ["v-52062726","/introduction.html",{"title":"Welcome to idemeum 👋"},["/introduction","/introduction.md"]],
+  ["v-52062726","/introduction.html",{"title":"Welcome to idemeum"},["/introduction","/introduction.md"]],
   ["v-7cf4753a","/lifecycle-management.html",{"title":"Automated account provisioning"},["/lifecycle-management","/lifecycle-management.md"]],
   ["v-427e2f43","/local-biometrics.html",{"title":"Local biometrics"},["/local-biometrics","/local-biometrics.md"]],
   ["v-9be1ec1c","/login-experience.html",{"title":"Login experience with MFA"},["/login-experience","/login-experience.md"]],
