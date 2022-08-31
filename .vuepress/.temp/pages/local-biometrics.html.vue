@@ -42,3 +42,5 @@
 <p>Then you can configure interval.</p>
 <p><img src="@source/images/idle1.png" alt="idle management"></p>
 </div></template>
+
+

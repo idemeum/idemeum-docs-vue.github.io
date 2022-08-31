@@ -27,3 +27,5 @@
 <h2 id="what-happens-if-i-lose-my-device" tabindex="-1"><a class="header-anchor" href="#what-happens-if-i-lose-my-device" aria-hidden="true">#</a> What happens if I lose my device?</h2>
 <p>We provide several simple and secure recovery methods. With <strong>self-service recovery</strong> users can self-recover using recovery QR-code that they store offline or in Cloud storage. With <strong>admin controlled recovery</strong> users can request recovery from new device, and admins can approve the recovery request from admin portal.</p>
 </div></template>
+
+

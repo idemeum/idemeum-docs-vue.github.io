@@ -17,3 +17,5 @@
 <h2 id="what-happens-to-a-previous-device-when-i-recover" tabindex="-1"><a class="header-anchor" href="#what-happens-to-a-previous-device-when-i-recover" aria-hidden="true">#</a> What happens to a previous device when I recover?</h2>
 <p>Previous device will be disabled and all sessions terminated. When you recover only your new device will be allowed to access company applications.</p>
 </div></template>
+
+

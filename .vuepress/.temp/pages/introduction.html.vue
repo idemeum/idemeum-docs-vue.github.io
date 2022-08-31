@@ -23,3 +23,5 @@
 <h3 id="secure-remote-access" tabindex="-1"><a class="header-anchor" href="#secure-remote-access" aria-hidden="true">#</a> <RouterLink to="/remote-access/secure-remote-access-overview.html">Secure Remote Access <badge type="warning" text="Early access"/></RouterLink></h3>
 <p>idemeum offers remote access to company infrastructure and on-premises resources leveraging zero-trust principles. Access to on-premises applications, SSH servers, and workstations is protected with passwordless MFA and audited to maintain security and accountability.</p>
 </div></template>
+
+

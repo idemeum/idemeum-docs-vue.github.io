@@ -22,3 +22,5 @@
 <li>Once you configure SAML application and click <code v-pre>Save</code> the application will be moved from <code v-pre>Catalog</code> tab into <code v-pre>My applications</code> tab. You can always go back and edit or delete application.</li>
 </ul>
 </div></template>
+
+

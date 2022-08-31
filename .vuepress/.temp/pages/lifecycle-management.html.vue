@@ -25,3 +25,5 @@
 <p><img src="@source/images/sso/provisioning-example.png" alt=""></p>
 <p>Please, check our <a href="https://integrations.idemeum.com" target="_blank" rel="noopener noreferrer">integrations portal<ExternalLinkIcon/></a> as we have a detailed step by step instructions there for how to enable SSO and provisioning for each application that idemeum supports.</p>
 </div></template>
+
+

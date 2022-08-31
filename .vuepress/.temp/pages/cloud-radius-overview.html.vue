@@ -16,3 +16,5 @@
 <li><strong>Encryption mode</strong>: WPA2 Enterprise</li>
 </ul>
 </div></template>
+
+

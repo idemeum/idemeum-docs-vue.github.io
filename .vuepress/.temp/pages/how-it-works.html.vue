@@ -62,3 +62,5 @@
 <li><strong>Simple:</strong> nothing for you to deploy or manage. idemeum abstracts all the complexity, and the only thing you need is to connect idemeum to your resources. We offer a simple proxy agent that you install on-premises, and it will securely connect to our cloud using outbound channel - no ports to open or firewall rules to change.</li>
 </ul>
 </div></template>
+
+

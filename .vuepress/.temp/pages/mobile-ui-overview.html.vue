@@ -34,3 +34,5 @@
 <li><strong>About</strong> - information about your app: version, your unique identified (DID), and where the crypto keys are stored.</li>
 </ul>
 </div></template>
+
+

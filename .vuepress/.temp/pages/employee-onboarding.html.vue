@@ -57,3 +57,5 @@
 <p>In the admin portal you can choose what information you want your new hires to verify before they can access company resources. You can choose email, phone number, first name / last name, or any combination of them.</p>
 <p><img src="@source/images/onboarding-configuration.png" alt="Onboarding configuration"></p>
 </div></template>
+
+

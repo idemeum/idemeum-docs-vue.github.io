@@ -24,3 +24,5 @@
 </ul>
 <p><img src="@source/images/custom-saml/manual.png" alt="Manul app"></p>
 </div></template>
+
+

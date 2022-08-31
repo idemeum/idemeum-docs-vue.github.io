@@ -1,7 +1,7 @@
-const { defaultTheme } = require('vuepress')
-const { docsearchPlugin } = require('@vuepress/plugin-docsearch')
-const { searchPlugin } = require('@vuepress/plugin-search')
-const { nprogressPlugin } = require('@vuepress/plugin-nprogress')
+import { defaultTheme } from '@vuepress/theme-default'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 
 module.exports = {
   lang: 'en-US',
@@ -127,13 +127,5 @@ module.exports = {
 		    ],
 
 	  }),
-	  
-	  plugins: [
-	      searchPlugin({
-			  maxSuggestions: 15,
-			  locales: {
-			          '/': {placeholder: 'Search'}, },
-	      }),
-		  nprogressPlugin(),
-	    ],
+
 }
