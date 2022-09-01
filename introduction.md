@@ -2,13 +2,13 @@
 
 ## What is idemeum?
 
-::: tip Unified Passwordless Platform
-At idemeum we built a platform to manage access to applications and infrastructure without passwords. 
+::: tip Zero Trust Platform
+idemeum offers one place to manage access to your applications and infrastructure, without passwords.
 :::
 
-If you think in industry terms, we combine several identity products one - **Privileged Access Management (PAM**), **Workforce Identity Management (IAM)**, and **Passwordless** technology. 
+For your employees idemeum can automatically create SaaS accounts and offer one-click centralized access to applications, regardless if they are public SaaS or in your private cloud behind a firewall. For your engineers, idemeum offers unified passwordless access to your infrastructure, including servers, RDP desktops, databases, and more.
 
-For workforce access idemeum allows to eliminate passwords across your organization and secure everything your employees access with Passwordless MFA and biometrics. For privilege access idemeum unifies secure access to on-premises applications, SSH servers, workstations, and databases across all environments.
+We offer a unique platform that combines Privileged Access Management (PAM), Workforce Identity (IAM), and Passwordless technology. Instead of deploying a VPN to access your private cloud apps, Single Sign-On to access your SaaS apps, PAM solution to access your infrastructure, and MFA to secure access, idemeum combines all of that in one platform.
 
 ## How we can help your business
 
@@ -20,18 +20,23 @@ For workforce access idemeum allows to eliminate passwords across your organizat
 
 ## Our products
 
-### [Passwordless MFA](./mfa-overview.html)
+### [Secure Remote Access <badge type="warning" text="Early access"/>](./remote-access/secure-remote-access-overview.html)
 
-idemeum Passwordless MFA allows organization to implement strong authentication for employees to access any company resource - applications, VPN, WiFi, infrastructure and more. Instead of passwords, employees access any resource with biometrics, leveraging mobile app or platform authenticators.
+Replace legacy VPN with modern zero trust solution to access on-premises applications, SSH servers, RDP desktops, and Kubernetes clusters.
 
 ### [Passwordless Single Sign-On](./application-catalog.html)
 
-idemeum offers fully-featured SAML Single Sign-On provider that is very easy to set up and offers hundreds of [integrations](https://integrations.idemeum.com). We offer many features including account provisioning, RBAC, user management, universal catalog and more.
+Automate employee onboarding and centralize one-click access to cloud applications from anywhere on any device.
 
 ### [Password Vault](./password-vault-overview.html)
 
-idemeum offers secure Password Vault that does not need a master password, and is protected by biometrics and certificates instead. Accessible across browsers, extensions, and mobile devices, idemeum Password Vault offers zero-knowledge encryption, credential sharing, and autofill.
+Cloud powered yet zero-knowledge password vault to securely store, share, and fill your credentials across company resources.
 
-### [Secure Remote Access <badge type="warning" text="Early access"/>](./remote-access/secure-remote-access-overview.html)
+### [Passwordless MFA](./mfa-overview.html)
 
-idemeum offers remote access to company infrastructure and on-premises resources leveraging zero-trust principles. Access to on-premises applications, SSH servers, and workstations is protected with passwordless MFA and audited to maintain security and accountability.
+Eliminate passwords for everything your employees access – SSO apps, Wi-Fi, VPN, desktops – and replace them with biometrics.
+
+
+
+
+

@@ -19,7 +19,7 @@ module.exports = {
 	    navbar: [
 			{
 			 text: 'Resources',
-			 children: [{text:'Contact', link:'https://idemeum.com/contact'}, {text:'Blog', link:'https://idemeum.com/blog'}],
+			 children: [{text:'Contact', link:'https://idemeum.com/contact'}, {text:'Blog', link:'https://blog.idemeum.com'}],
 		},
   	      {
   	        text: 'Changelog',

@@ -7,13 +7,13 @@ actions:
     type: primary
 features:
   - title: Secure Remote Access	
-    details: Replace legacy VPN to access apps and infrastructure without passwords.
-  - title: Password Vault
-    details: Secure store, share, and auto-fill passwords.
-  - title: Passwordless MFA
-    details: Secure access to any company resource with biometrics.
+    details: Replace legacy VPN with modern zero trust solution to access on-premises applications, SSH servers, RDP desktops, and Kubernetes clusters.
   - title: Passwordless SSO
-    details: Centralized one-click access to apps and infrastructure.
+    details: Automate employee onboarding and centralize one-click access to cloud applications from anywhere on any device.
+  - title: Password Vault
+    details: Cloud powered yet zero-knowledge password vault to securely store, share, and fill your credentials across company resources.
+  - title: Passwordless MFA
+    details: Eliminate passwords for everything your employees access – SSO apps, Wi-Fi, VPN, desktops – and replace them with biometrics.
   - title: Automated provisioning
     details: Automatically create and remove employee SaaS app accounts.
   - title: Cloud Radius
