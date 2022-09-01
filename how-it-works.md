@@ -1,37 +1,23 @@
-# How it works 🤔
+# How it works
 ## Overview
+idemeum is a SaaS zero trust platform that is hosted on AWS. We try to minimize the footprint of on-premises components that our customers need to deploy. We architected idemeum based on [micro-services architecture](https://blog.idemeum.com/microservice-scalability/) to offer high availability and security. 
 
-idemeum is a unified platform. What that means is that we have combined privileged access management with workforce identity management into one product and made everything employees access passwordless.
-
-Our platform is modular and allows customers to choose what services they would like to deploy and integrate with existing identity infrastructure. 
-
-idemeum is hosted on AWS and is a SaaS product only. We try to minimize the footprint of on-premises components that our customers need to deploy. idemeum is architected as a microservices-based application, and offers high availability and security.
-
-::: tip Security whitepaper
-You can learn more about our security principles [here](./security-whitepaper.md). 
-:::
+idemeum is unified, yet modular. We combined products from several identity categories to offer unified app and infrastructure access experience. We sit at the intersection of Privileged Access Management (PAM), Workforce Identity (IAM), and Passwordless Technology. You can deploy and leverage the power of the whole platform, or choose the components that you need. Check our [pricing and licensing](https://idemeum.com/pricing) page to see what product tiers we offer today. 
 
 ## Platform components
 Here is a high level overview of idemeum platform components:
 
 ![Architecture](./images/architecture.png)
 
-### [1. Passwordless MFA](./mfa-overview.html)
+### [Passwordless Single Sign-On](./application-catalog.html)
 
-**Passwordless Multi-Factor Authentication (MFA)** is a mobile app that allows to replace password with biometrics.
+Single Sign-On (SSO) is the entry door to access your company resources. Typically, SSO is centered around accessing SaaS Web applications, which are integrated using SAML / OIDC protocols. Companies are deploying products such as Okta, Azure AD, and others to manage access to SSO applications. 
 
-* **Multi-factor:** it is multi-factor as for each authentication two factors are used: *something you have* - certificate that is provisioned on a mobile device, and *something you are* - mobile biometric sensors such as Face ID. 
-* **Universal:** employees can access pretty much any resource with idemeum passwordless MFA, including SSO web apps, password vault, VPN. Wi-Fi, infrastructure servers, desktop workstations and more. 
-* **Self-service:** users can enroll into MFA right from the mobile app, and in case the mobile device is lost we offers self recovery option, as well as recovery with admin approval. 
+idemeum goes beyond just SaaS web applications. We unify access to any company resource, including SAML SaaS applications, on-premises applications, SSH servers, RDP desktops, databases, and more. Pretty much you can access anything you need in your organization. 
 
-::: tip Deployment options
-Passwordless MFA can be deployed: 
-1. With idemeum Single Sign-On Identity Provider and infrastructure access, as it is deeply integrated into our platform. This way you have one platform to manage workforce and privileged access.
-2. With your own Identity Provider such as Okta or Azure AD. We support various SAML [integrations](https://integrations.idemeum.com/tag/identity-providers/) today.
-:::
+![Catalog](./images/catalog.png)
 
-### [2. Single Sign-On](./application-catalog.html)
-idemeum offers a fully featured Single Sign-On Identity Provider (SAML & OIDC).
+idemeum acts as a fully-featured Identity Provider offering features such as:
 
 * **Integrations:** you can integrate [hundreds of SaaS applications](https://integrations.idemeum.com) using SAML in order to offer one-click centralized access. 
 * **Passwordless access:** idemeum SSO works with **Passwordless MFA** to offer passwordless access to applications. Users login to application catalog with Passwordless MFA and then can click on any application to launch it without needing to type any passwords. 
@@ -41,22 +27,28 @@ idemeum offers a fully featured Single Sign-On Identity Provider (SAML & OIDC).
 
 Navigate to [Single Sign-On](/application-catalog.html) section to learn more about idemeum Identity Provider.
 
-### [3. Cloud Radius](./cloud-radius-overview.html)
-idemeum offers Cloud Radius instance so that you can control access to you VPN, Wi-Fi, and network resources. Paired with **Passwordless MFA** users can access any network resource such as VPN without needing to have passwords. Just use mobile application to approve login with biometrics. 
+### [Passwordless MFA](./mfa-overview.html)
 
-Deploy managed Radius authentication in your organization without building, maintaining, or monitoring physical servers.
+At idemeum we hate passwords. Therefore we built a Passwordless MFA mobile app to allow you to access any company resource with biometrics instead. You simply take mobile app, scan a QR-code, approve with biometrics, and you are in. 
 
-Check our [integrations portal](https://integrations.idemeum.com/) to see what Radius integrations we support today. Our platform is quite flexible, so if certified integration is missing, we are happy to add it. 
+idemeum Passwordless MFA is multi-factor as for each authentication two factors are used: *something you have* - certificate that is provisioned on a mobile device, and *something you are* - mobile biometric sensors such as Face ID.
 
-### 4. Cloud Directory
-idemeum offers various ways to manage users and onboarding. 
+Today we support various types of integrations if you just want to use our Passwordless MFA:
 
-* **Local user management:** you can manually create users in idemeum and specify email address along with various personal identity claims. When users will be onboarding with Passwordless MFA this user data will be used. 
-* **External user sources:** idemeum can integrate with external user sources such as HRMS systems, payroll providers, or existing identity providers. 
+* **You existing SSO provider such as Okta or Azure AD** - you can use idemeum MFA to make every employee login into SaaS applications passwordless. 
+* **VPN and Wi-Fi** - idemeum offers cloud based Radius so that you can integrate with your existing Wi-Fi and VPN infrastructure. When employees connect to Wi-Fi or access VPN, they no longer need to use password, but rather approve access with Passwordless MFA. 
+* **Windows and Mac desktops** - we offer idemeum desktop application to make logins to your desktops / laptops passwordless. You can install idemeum desktop application, pair it with you mobile device, and start logging with biometrics. 
 
-Again, check our integrations catalog to see what [user sources](https://integrations.idemeum.com/tag/user-source/) we support today. 
+Users can enroll into MFA right from the mobile app, and in case the mobile device is lost we offer self recovery option, as well as recovery with admin approval. 
 
-### [5. Secure Password Vault](./password-vault-overview.html)
+::: tip Deployment options
+Passwordless MFA can be deployed: 
+1. With idemeum Single Sign-On Identity Provider and infrastructure access, as it is deeply integrated into our platform. This way you have one platform to manage workforce and privileged access.
+2. With your own Identity Provider such as Okta or Azure AD. We support various SAML [integrations](https://integrations.idemeum.com/tag/identity-providers/) today.
+:::
+
+
+### [Secure Password Vault](./password-vault-overview.html)
 idemeum offers a secure cloud vault to store passwords for your employees and privileged accounts. 
 
 * **Zero knowledge:** each user gets access to password vault, and the credentials are encrypted with the keys that are kept on user mobile devices. What that means is that we do not have access to your passwords. And if our cloud gets compromised, none of your passwords wil ever get leaked. Decryption happens on the client side, i.e. your browser, mobile app, and browser extension. 
@@ -67,9 +59,11 @@ idemeum offers a secure cloud vault to store passwords for your employees and pr
 Even though our password vault is cloud based, we do not see your password as they are encrypted on the client side. Check our [security white paper](./security-whitepaper) to learn more about our security and encryption principles.
 :::
 
-### [6. Zero-trust remote access <badge type="warning" text="Early access"/>](./zero-trust/zero-trust-overview.html)
-idemeum offers a simple and secure way to access your infrastructure from the same platform. 
+### [Secure Remote Access <badge type="warning" text="Early access"/>](./zero-trust/zero-trust-overview.html)
+idemeum offers a cloud identity-aware proxy so that you can connect to you private cloud infrastructure. 
 
-* **Passwordless:** you access infrastructure resources without passwords. Users leverage Passwordless MFA to login to an idemeum portal and then access various applications or servers. 
+idemeum Secure Remote Access offers:
+
+* **Passwordless infrastructure access:** you access infrastructure resources without passwords. Users leverage Passwordless MFA to login to an idemeum portal and then access various applications or servers. idemeum eliminates static credentials such as passwords and SSH keys.
 * **Universal:** we support access to on-premises applications, SSH servers, workstations and more. 
 * **Simple:** nothing for you to deploy or manage. idemeum abstracts all the complexity, and the only thing you need is to connect idemeum to your resources. We offer a simple proxy agent that you install on-premises, and it will securely connect to our cloud using outbound channel - no ports to open or firewall rules to change. 

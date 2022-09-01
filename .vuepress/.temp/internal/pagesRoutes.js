@@ -8,7 +8,7 @@ export const pagesRoutes = [
   ["v-3ee4b756","/cloud-radius-overview.html",{"title":"Cloud Radius overview"},["/cloud-radius-overview","/cloud-radius-overview.md"]],
   ["v-401b4678","/employee-onboarding.html",{"title":"Employee onboarding 🔑"},["/employee-onboarding","/employee-onboarding.md"]],
   ["v-1b5365cf","/group-management.html",{"title":"Group management"},["/group-management","/group-management.md"]],
-  ["v-1faf83e3","/how-it-works.html",{"title":"How it works 🤔"},["/how-it-works","/how-it-works.md"]],
+  ["v-1faf83e3","/how-it-works.html",{"title":"How it works"},["/how-it-works","/how-it-works.md"]],
   ["v-7bff7bed","/how-to-obtain-saml-metadata-for-idemeum.html",{"title":"How to obtain SAML metadata for idemeum"},["/how-to-obtain-saml-metadata-for-idemeum","/how-to-obtain-saml-metadata-for-idemeum.md"]],
   ["v-424c9fad","/how-to-recover-device-user-guide.html",{"title":"How to recover - user guide"},["/how-to-recover-device-user-guide","/how-to-recover-device-user-guide.md"]],
   ["v-3d046675","/how-to-set-up-radius-integration.html",{"title":"How to set up Radius integration"},["/how-to-set-up-radius-integration","/how-to-set-up-radius-integration.md"]],
