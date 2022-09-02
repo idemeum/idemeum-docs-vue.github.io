@@ -113,7 +113,8 @@ module.exports = {
 				  collapsible: true,
 		        children: [
 		          {text: 'Overview',link: '/password-vault-overview.html',},
-
+		          {text: 'Create password application',link: '/create-password-application.html',},
+		          {text: 'Add TOTP for password application',link: '/totp-mfa.html',},
 		        ],
 		      },
 		      {
