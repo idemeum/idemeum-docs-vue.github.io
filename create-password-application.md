@@ -7,7 +7,7 @@
 There are several ways to create a password application in idemeum. 
 
 1. Desktop application portal
-2. Mobile app
+2. Mobile application
 
 :::
 
@@ -34,7 +34,7 @@ You can learn more about TOTP MFA in the following [section](./totp-mfa.html).
 
 Once the application is saved, it will show up in your catalog, and you will be able to start launching it and filling credentials on desktop and mobile. 
 
-## Mobile app
+## Mobile application
 
 * Open idemeum mobile application
 * Click `+` on the home screen

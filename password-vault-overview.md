@@ -31,4 +31,4 @@ In order to auto-fill credentials to cloud and on-premises applications, you wil
 ### 3. Mobile application
 Mobile application offers access to password vault as well.
 
-<img src="./images/vault/vault-mobile.jpeg" width="200px" style="filter: drop-shadow(5px 5px 5px #abb8c3)">
+<img src="./images/vault/mobile-copy.png" width="200px">
