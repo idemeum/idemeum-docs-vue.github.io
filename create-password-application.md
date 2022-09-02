@@ -38,21 +38,19 @@ Once the application is saved, it will show up in your catalog, and you will be 
 
 * Open idemeum mobile application
 * Click `+` on the home screen
-
-<img src="./images/vault/create-app-mobile.png" width="200px">
-
 * You can choose among the pre-configures applications, or you can type any name of the application you like
 
-<img src="./images/vault/create-mobile.png" width="200px">
+<img src="./images/create-app-mobile.png" width="200">
 
 * If you chose the pro-configured app, the logo and `website` will be populated automatically
 * If you entered custom application, you will need to enter the `website` in the form of URL or domain name, such as `cisco.com`
+
+<img src="./images/create-mobile.png" width="200">
+
 * Enter your `username` and `password`
 * Check the box if you want to configure [One-time-code (TOTP)](https://en.wikipedia.org/wiki/Time-based_one-time_password) based MFA for this application
 * You can enter the secret that application provides manually, or you can click the QR-code icon to scan the TOTP QR code using idemeum mobile app.
 
 ::: tip Learn more about one-time codes
-
 You can learn more about TOTP MFA in the following [section](./totp-mfa.html). 
-
 :::
