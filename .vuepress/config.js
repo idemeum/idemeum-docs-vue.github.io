@@ -77,6 +77,7 @@ module.exports = {
 		          {text: 'Overview',link: '/password-vault-overview.html',},
 		          {text: 'Create password application',link: '/create-password-application.html',},
 		          {text: 'View / edit / delete application',link: '/edit-password-application.html',},
+		          {text: 'Share password application',link: '/share-password-application.html',},
 		          {text: 'Add TOTP for password application',link: '/totp-mfa.html',},
 		        ],
 		      },
