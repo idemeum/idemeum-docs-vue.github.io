@@ -1,22 +1,16 @@
-# Share password application
+# Share passwords
 
 ## Overview
 
-idemeum offers a convenient and secure way to share passwords with other employees. Instead of sending passwords over email / slack, or simply putting them into work documents, idemeum offers one-click password sharing functionality. 
+idemeum offers a convenient and secure way to share passwords with other employees. Instead of sending passwords over email / slack, or simply putting them into work documents, idemeum offers one-click password sharing functionality.
 
-Password vault and password applications can be accessed through desktop portal, browser extension, and mobile application. Today sharing functionality is available in the desktop portal only. 
-
-|                   | Share password | 
-| ----------------- |:-------------:|
-| Desktop portal    | Yes           |
-| Browser extension | -           |
-| Mobile application| -           |
+Today sharing functionality is available in the desktop portal only. 
 
 ## Share password app using desktop portal
 
 * Login to idemeum application portal by navigating to your company URL, for example `company.idemeum.com`
 * Navigate to `Accounts` tab
-* Search for application you want to share with other employees
+* Search for an application you want to share with other employees
 * Click on `...` in the `Actions` section and choose `Share application`
 
 ![Share password app](./images/vault/share-desktop.png)

@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-1c721c6e","path":"/totp-mfa.html","title":"Add TOTP MFA for password application","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1662093233000,"contributors":[{"name":"Nikolay Poturnak","email":"npoturnak@NikolayacStudio.localdomain","commits":1}]},"filePathRelative":"totp-mfa.md"}');export{t as data};

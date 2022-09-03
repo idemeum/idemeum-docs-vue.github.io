@@ -76,8 +76,10 @@ module.exports = {
 		        children: [
 		          {text: 'Overview',link: '/password-vault-overview.html',},
 		          {text: 'Create password application',link: '/create-password-application.html',},
-		          {text: 'View / edit / delete application',link: '/edit-password-application.html',},
-		          {text: 'Share password application',link: '/share-password-application.html',},
+		          {text: 'View / edit / delete passwords',link: '/edit-password-application.html',},
+		          {text: 'Share passwords',link: '/share-password-application.html',},
+		          {text: 'Password autofill',link: '/autofill-passwords.html',},
+		          {text: 'Password auto capture',link: '/password-autocapture.html',},
 		          {text: 'Add TOTP for password application',link: '/totp-mfa.html',},
 		        ],
 		      },
@@ -130,5 +132,9 @@ module.exports = {
 		    ],
 
 	  }),
-
+	  plugins: [
+	      searchPlugin({
+	        // options
+	      }),
+	    ],
 }
