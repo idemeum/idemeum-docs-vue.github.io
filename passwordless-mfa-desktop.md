@@ -1,4 +1,5 @@
 # Passwordless MFA for desktop <badge type="warning" text="Early access"/>
+[[toc]]
 
 ## Overview
 
@@ -7,6 +8,8 @@ idemeum also offers a desktop integration to allow users login into desktops wit
 ![Passwordless for desktops](./images/mfa-desktop.png)
 
 
+## Passwordless MFA for Windows
+
 ::: warning Early access
 
 This feature is in early access.
@@ -14,3 +17,5 @@ This feature is in early access.
 Please, contact us for more details at [support@idemeum.com](mailto:support@idemeum.com)
 
 :::
+
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/tXIVEv88kXQ' frameborder='0' allowfullscreen></iframe></div>

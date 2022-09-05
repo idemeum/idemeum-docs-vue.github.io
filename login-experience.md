@@ -1,10 +1,10 @@
 # Login experience with MFA
 
+[[toc]]
+
 ## Overview
 
 When accessing company resources idemeum offers passwordless logins of several types. Instead of entering passwords, employees leverage biometrics to access any resource securely. 
-
-Every login with idemeum is **multi-factor**, as several authentication factors are used: **certificates** (*something you have*) and **biometrics** (*something you are*).
 
 ## 1. Login with QR-code
 To login with QR-code you will need:

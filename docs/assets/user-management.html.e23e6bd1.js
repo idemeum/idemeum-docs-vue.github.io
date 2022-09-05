@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as n,a as e,d as r}from"./app.c7287ea5.js";const s={},c=e("h1",{id:"user-management",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#user-management","aria-hidden":"true"},"#"),r(" User management")],-1),o=[c];function _(m,d){return t(),n("div",null,o)}const h=a(s,[["render",_],["__file","user-management.html.vue"]]);export{h as default};

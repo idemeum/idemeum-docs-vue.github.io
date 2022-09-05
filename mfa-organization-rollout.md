@@ -1,20 +1,15 @@
-# MFA organization rollout :office:
+# MFA organization rollout
 
-## Overview
+[[toc]]
 
-idemeum Passwordless MFA can be integrated with various parts of your identity infrastructure, including [SSO](./passwordless-mfa-sso.html), [VPN](./passwordless-mfa-vpn-wifi.html), [desktops](./passwordless-mfa-desktop.html), [vault](./passwordless-mfa-vault.html), and more. You can use idemeum as a one stop shop solution for managing workforce and privileged identity, or can seamlessly roll out idemeum on top of your existing infrastructure as a passwordless MFA. 
+## With idemeum Single Sign-On
 
-Here are the three steps you will need to do to roll our Passwordless MFA for your existing employees:
-
-1. **Invite your employees** to enroll into passwordless experience
-2. **Integrate idemeum** with your infrastructure
-3. **Enable passwordless authentication** across the org
-
-## 1. Invite your employees
-
-As a first step you will need to send all existing employees an email inviting them to enroll in idemeum's passwordless experience. At this point employees are still accessing applications with username and password, but they can now set up passwordless MFA and get enrolled. You will simply use an email to ask employees to enroll, and you can track the progress of how many users enrolled with idemeum. 
-
-Example of enrollment email is shown below.
+* If you use idemeum as a platform to manage your applications and infrastructure things become very simple - everything your employees access with be passwordless and protected with MFA. You can follow the guides and integrate idemeum with:
+	* [Single Sing-On SAML apps](./passwordless-mfa-sso.html)
+	* [VPN anf Wi-Fi](./passwordless-mfa-vpn-wifi.html)
+	* [Windows and Mac desktops](./passwordless-mfa-desktop.html)
+	* [Infrastructure](./remote-access/secure-remote-access-overview.html) 
+* Invite your employees to onboard into company passwordless experience. You can use simple email like the one below. Onboarding will involve 3 simple steps - install idemeum application, verify personal identity, and scan a QR-code at the company portal. We discussed onboarding in detail [here](./employee-onboarding.html).
 
 ::: tip Email template
 
@@ -42,35 +37,19 @@ Questions? Contact support team at support@company.com
 
 :::
 
-### Enrollment link
-When employees navigate to enrollment link and scan the QR-code with idemeum mobile app, we try to [onboard user](./employee-onboarding.html) using their personal claim using the [user source](./integration-with-hr-system.html) that is configured in idemeum. If everything is configured correctly and onboarding is successful, employee will be shown the corporate email address. 
+## With your own Single Sign-On
+
+idemeum also supports easy integrations with major Identity Providers such as Okta, Azure AD, Onelogin, and more. 
+
+* Check our [integrations portal](https://integrations.idemeum.com) for detailed integration guides. 
+* Invite your employees to onboard into passwordless experience. You can leverage the same sample email that we included in the above section. As an added convenience we offer an enrollment link to show employees the status of their onboarding before integration with idemeum is fully enabled. 
 
 ::: warning Enrollment link
 
-
 For the enrollment link we offer a URL that employees can use to self-enroll. The link is created by adding `/enroll` to your company's idemeum tenant name. For instance `https://acme.idemeum.com/enroll`.
+
+When employees navigate to enrollment link and scan the QR-code with idemeum mobile app, we try to [onboard user](./employee-onboarding.html) using their personal claim using the [user source](./integration-with-hr-system.html) that is configured in idemeum. If everything is configured correctly and onboarding is successful, employee will be shown the corporate email address. 
 
 :::
 
-
-## 2. Integrate idemeum
-
-As a second step you will need to integrate idemeum with your existing infrastructure. Check out our [integrations portal](https://integrations.idemeum.com) to explore various integrations that we support today.
-
-Typically you would connect idemeum to:
-
-* Your existing SAML SSO Identity Provider to allow users access SaaS apps with passwordless MFA
-* Virtual Private Network (VPN)
-* Networking / Wi-Fi infrastructure
-* HR / Payroll system or any other source if you want completely automate passwordless onboarding
-
-We have detailed integration guides posted in our integration portal. If you need an integration that we do not currently support, please reach out to [support@idemeum.com](MAILTO:SUPPORT@IDEMEUM.COM).
-
-## 3. Enable passwordless experience
-
-Once your employees are enrolled, and you have idemeum integrated with your infrastructure, you can turn off password-based login for your employees. That will depend on your specific integration:
-
-* For Okta you will enable routing rules to use idemeum for all SaaS applications access
-* For Azure you will need to enable 3rd party IDP federation using PowerShell
-* For VPN you will turn the Radius integration with idemeum
-* and more
+* When everything is set up, and employees are onboarded, you can turn on login with idemeum Passwordless MFA. For example, for Okta you will enable routing rules to use idemeum for all SaaS applications access, for Azure AD you will configure your domain to use idemeum as authentication source. Detailed steps for each Identity Provider are described in our [integration portal](https://integrations.idemeum.com/tag/identity-providers/). 

@@ -6,6 +6,8 @@ Typically accessing a password manager / password vault requires memorizing and 
 
 ![Passwordless for credentials vault](./images/mfa-vault.png)
 
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/udsbzdEnhkg' frameborder='0' allowfullscreen></iframe></div>
+
 ## How to set up
 
 Every idemeum license comes with Password Vault included by default. Once you have your idemeum tenant set up, you can start inviting users, who in turn will be able to use password vault, create applications, and share credentails with other employees. 

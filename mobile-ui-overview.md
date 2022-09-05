@@ -1,5 +1,7 @@
 # Mobile UI overview
 
+[[toc]]
+
 ## Home
 
 Home screen is where you can immediately access your applications with a simple click. Great thing about idemeum is that it aggregates all Single Sign-On (SSO) and password-based applications in a single place. If you click on SSO application, it will launch seamlessly without any passwords. If you launch password based application, it will launch, password will be auto-filled, and you will be logged in.

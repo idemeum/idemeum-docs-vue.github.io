@@ -13,10 +13,11 @@ idemeum offers **Passwordless Multi-Factor Authentication (MFA)** that replaces 
 idemeum MFA is universal, meaning you can access any company resource with biometrics:
 
 1. Single Sign-On apps
-2. Password vault
-3. VPN or Wi-Fi
-4. Infrastructure
-4. Desktop workstations (Mac or Windows)
+2. VPN or Wi-Fi
+3. Desktop workstations (Mac or Windows)
+4. Password vault
+5. Infrastructure
+
 
 :::
 

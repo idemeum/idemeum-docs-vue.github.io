@@ -1,4 +1,7 @@
 # Local biometrics
+
+[[toc]]
+
 ## Overview
 Oftentimes employees do not have a phone nearby or do not want to use mobile device every single time they access applications. What is more, most laptops today offer what is called **platform biometric authenticators**. For example an Apple MacBook will have a local fingerprint reader that can be used to authenticate employees.
 
@@ -13,7 +16,7 @@ You can check Webauthn browser support [here](https://caniuse.com/?search=webaut
 :::
 
 ## How to enable local biometrics
-Before employees can use the feature, administrators need to navigate to `Admin Portal` > `Security Settings` > `Login Settings` > `Login with local biometrics` and enable the feature.
+Before employees can use the feature, administrators need to navigate to `Admin Portal` > `Settings` > `Login Settings` > `Login with local biometrics` and enable the feature.
 
 ![Local biometrics](./images/local-biometrics.png)
 

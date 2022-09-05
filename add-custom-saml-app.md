@@ -1,4 +1,4 @@
-# Add custom SAML app :pushpin:
+# Add custom SAML app
 
 ## Overview
 

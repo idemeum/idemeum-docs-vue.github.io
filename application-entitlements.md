@@ -1,4 +1,4 @@
-# Application entitlements :electric_plug:
+# Application entitlements
 
 ## Overview
 
