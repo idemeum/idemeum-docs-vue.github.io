@@ -66,12 +66,11 @@ module.exports = {
 				  {text: 'User source integration',link: '/integration-with-hr-system.html',},
 			      {text: 'User management',link: '/user-management.html',},
 		          {text: 'Application catalog',link: '/application-catalog.html',},
+		          {text: 'Integrate SAML applications',link: '/integrate-saml-app.html',},
+		          {text: 'How to obtain SAML metadata',link: '/how-to-obtain-saml-metadata-for-idemeum.html',},
 		          {text: 'Automated provisioning',link: '/lifecycle-management.html',},
 		          {text: 'Application entitlements',link: '/application-entitlements.html',},
 		          {text: 'Group management',link: '/group-management.html',},
-		          {text: 'How to obtain SAML metadata',link: '/how-to-obtain-saml-metadata-for-idemeum.html',},
-		          {text: 'Add custom SAML app',link: '/add-custom-saml-app.html',},
-
 		        ],
 		      },
 		      {
@@ -129,6 +128,14 @@ module.exports = {
 		          {text: 'Overview',link: '/cloud-radius-overview.html',},
 		          {text: 'How to set up Radius integration',link: '/how-to-set-up-radius-integration.html',},
 		          {text: 'Cloud Radius IP address',link: '/cloud-radius-ip-address.html',},
+		        ],
+		      },
+		      {
+		        text: 'Legal',
+				  collapsible: true,
+		        children: [
+		          {text: 'Privacy policy',link: '/privacy-policy.html',},
+		          {text: 'Terms of service',link: '/terms-of-service.html',},
 		        ],
 		      },
 		    ],
