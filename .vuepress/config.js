@@ -2,6 +2,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
+import { gitPlugin } from '@vuepress/plugin-git'
 
 module.exports = {
   lang: 'en-US',
@@ -136,5 +137,8 @@ module.exports = {
 	      searchPlugin({
 	        // options
 	      }),
+		  gitPlugin({
+			  contributors: false,
+		      }),
 	    ],
 }
