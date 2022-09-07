@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-74f221b6","path":"/application-catalog.html","title":"Application catalog overview","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Overview","slug":"overview","link":"#overview","children":[]}],"filePathRelative":"application-catalog.md","git":{"createdTime":1660884535000,"updatedTime":1662412412000}}');export{e as data};

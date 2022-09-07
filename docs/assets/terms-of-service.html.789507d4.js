@@ -1,1 +1,0 @@
-import{_ as r,o as s,c as t,a as e,e as c}from"./app.f18429e6.js";const o={},a=e("h1",{id:"terms-of-service",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#terms-of-service","aria-hidden":"true"},"#"),c(" Terms of service")],-1),i=[a];function n(_,d){return s(),t("div",null,i)}const m=r(o,[["render",n],["__file","terms-of-service.html.vue"]]);export{m as default};
