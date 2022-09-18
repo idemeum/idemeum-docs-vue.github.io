@@ -95,7 +95,7 @@ module.exports = {
 				  {text: 'Organization rollout',link: '/mfa-organization-rollout.html',},
 				  {text: 'Passwordless MFA for SSO',link: '/passwordless-mfa-sso.html',},
 				  {text: 'Passwordless MFA for VPN / Wi-Fi',link: '/passwordless-mfa-vpn-wifi.html',},
-				  {text: 'Passwordless MFA for desktop',link: '/passwordless-mfa-desktop.html',},
+				  {text: 'Passwordless MFA for Windows',link: '/passwordless-mfa-desktop-windows.html',},
 				  {text: 'Passwordless MFA for vault',link: '/passwordless-mfa-vault.html',},
 				  {text: 'Login experience with MFA',link: '/login-experience.html',},
 				  {text: 'Local biometrics',link: '/local-biometrics.html',},
