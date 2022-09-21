@@ -22,7 +22,7 @@ Remote Access infrastructure is not enabled by default when you sign up for idem
 
 ::: warning Provisioning time
 
-Typically it will take up to 10 minutes to provision remite access infrastructure for your tenant.
+Typically it will take up to 10 minutes to provision remote access infrastructure for your tenant.
 
 :::
 

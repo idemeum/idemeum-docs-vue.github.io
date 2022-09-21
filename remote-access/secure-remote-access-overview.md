@@ -3,24 +3,29 @@
 
 ## Overview
 
-idemeum provides cloud proxy to access your infrastructure and private cloud applications.
+idemeum offers cloud proxy to access your infrastructure and private cloud applications.
 
-::: tip What is Secure Remote Access for?
+::: tip What is Secure Remote Access?
 
 With idemeum remote access infrastructure you can:
 
-* Replace your legacy VPN and centralize passwordless access to all on-premises resources in one place including web applications, SSH servers, and RDP desktops.
-* Eliminate passwords and replace then with short-lived certificates
+* Replace your legacy VPN and centralize passwordless access to all on-premises resources including web applications, SSH servers, and RDP desktops
+* Eliminate passwords and replace them with short-lived certificates
 * Enforce access policies to give your employees access to only what they need
 
 :::
 
-Secure Remote Access offers end to end user experience: it ***connects*** employees to resources without exposing any ports or network changes, ***authenticates*** access with [Passwordless MFA](./mfa-overview.html), ***authorizes*** access based on granular policies, and ***audits*** each user session. 
+Secure Remote Access offers end to end user experience:
+
+* ***Connects*** employees to resources without exposing any ports or network changes
+* ***Authenticates*** users with [Passwordless MFA](../mfa-overview.html)
+* ***Authorizes*** access based on granular policies
+* ***Audits*** each user session and captures terminal recordings
 
 ## Core components
 
 ### Proxy Service
-Proxy Service allows employees to access on-premises company resources from the public network. It is identity aware, meaning it makes sure only authenticated clients can connect to company on-premises resources. Proxy Service intercepts multiple protocols, including HTTP, SSH, and RDP traffic.
+Proxy Service allows employees to access on-premises company resources from public network. It is identity aware proxy, meaning it makes sure only authenticated clients can connect to company on-premises resources. Proxy Service intercepts multiple protocols, including HTTP, SSH, and RDP traffic.
 
 ![Remote access overview](../remote-access/images/overview.png)
 
@@ -50,7 +55,7 @@ When you configure remote application or server in idemeum, you have an option t
 
 Authentication is about proving an identity of a user.
 
-When a user is accessing company application or resource, the first thing that needs to happen is Multi-Factor Authentication with idemeum [Passwordless MFA](./mfa-overview.html). User will need to approve login with biometrics and perform FIDO-based authentication with certificates stored in a mobile device hardware backed storage. You can learn more about how Passwordless MFA works in our [security paper](./security-whitepaper.html). 
+When a user is accessing company application or resource, the first thing that needs to happen is Multi-Factor Authentication with idemeum [Passwordless MFA](../mfa-overview.html). User will need to approve login with biometrics and perform FIDO-based authentication with certificates stored in a mobile device hardware backed storage. You can learn more about how Passwordless MFA works in our [security paper](../security-whitepaper.html). 
 
 Once a session is established with idemeum, an [X.509](https://en.wikipedia.org/wiki/X.509) short-lived certificate is issued for a user. Certificates are tied to a user identity, and every connection to a server or application with idemeum Remote Access will require authentication with this certificate. Thereby, idemeum eliminates passwords and static credentials. User certificates are short-lived and will expire automatically without any management required. 
 
@@ -58,7 +63,7 @@ Once a session is established with idemeum, an [X.509](https://en.wikipedia.org/
 
 Authorization is about giving access rights to a resource.
 
-in idemeum everything is denied by default following [least privilege principle](https://en.wikipedia.org/wiki/Principle_of_least_privilege). After successful authentication we evaluate admin-defined policies to assign users resources that they are entitled to. 
+With idemeum everything is denied by default following [least privilege principle](https://en.wikipedia.org/wiki/Principle_of_least_privilege). After successful authentication we evaluate admin-defined policies to assign users resources that they are entitled to. 
 Admins can define fine-grained policy rules to allow access to specific applications and servers based on various attributes, such as user roles, principals, and more.
 
 ### Audit
