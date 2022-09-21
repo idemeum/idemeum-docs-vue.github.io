@@ -55,6 +55,7 @@ module.exports = {
 				  collapsible: true,
 		        children: [
 		          {text: 'Overview',link: '/remote-access/secure-remote-access-overview.html',},
+		          {text: 'Enable remote access infrastrucrure',link: '/remote-access/enable-remote-access.html',},
 
 		        ],
 		      },
