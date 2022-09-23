@@ -67,7 +67,7 @@ The administrator wants to allow some users to access Grafana over the internet 
 
 ![Entitle server](../remote-access/images/entitle-server.png)
 
-* In the example below I am directly entitling user `nik@idemeumlab` to access the Grafana application. You can also use groups to perform entitlement. 
+* In the example below I am directly entitling user `nik@idemeumlab.com` to access the Grafana application. You can also use groups to perform entitlement. 
 
 ![Entitle application](../remote-access/images/entitlement-app-config.png)
 
@@ -79,7 +79,7 @@ You can learn more about how [groups](../group-management.html) and [entitlement
 
 ## Access remote web application
 
-* You can launch remote servers in the same way you would access any other application - from **browser user portal**, from **extension**, and **mobile application**. 
+* You can launch remote web applications in the same way you would access any other application - from **browser user portal**, from **extension**, and **mobile application**. 
 
 ![Launch application](../remote-access/images/launch-app.png)
 

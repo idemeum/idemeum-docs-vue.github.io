@@ -68,7 +68,7 @@ The administrator wants to allow some users to access the messaging broker serve
 
 ![Entitle server](../remote-access/images/entitle-server.png)
 
-* In the example below I am directly entitling user `nik@idemeumlab` to access the RabbitMq server. You can also use groups to perform entitlement. 
+* In the example below I am directly entitling user `nik@idemeumlab.com` to access the RabbitMq server. You can also use groups to perform entitlement. 
 * We have also configured what username(s) will be used when accessing the RabbitMq server. In the example above we have created 2 usernames: `root` and `ec2-user`. When launching the remote server application the user will select which username it wants to use for the connection to the RabbitMq server machine. This means that these usernames have to exist on the machine where the RabbitMq server is running.
 
 ![Entitle server](../remote-access/images/entitlement-configuration.png)
