@@ -108,4 +108,4 @@ sudo ./install
 ![SCP](../remote-access/images/install.png)
 
 * You now have idemeum agent installed and configuration file ready. You can now start the agent and allow it connect to idemeum Proxy Service.
-* Follow Secure Remote Access guides (for [Remote Web Application](../remote-access/remote-web-app.html) and [Remote Servers](../remote-access/remote-ssh-server.html)) to complete configuration.
+* Follow Secure Remote Access guides (for [Remote Web Application](../remote-access/remote-web-app.html) and [Remote SSH Servers](../remote-access/remote-ssh-server.html)) to complete configuration.
