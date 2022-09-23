@@ -33,7 +33,7 @@ Proxy Service carries out additional functionality including issuing short-lived
 
 ### Agent
 
-Agent allows you to seamlessly connect to on-premises resources without exposing any ports or changing network configuration. It established a reverse tunnel back to idemeum Proxy Service, which in turn will forward client connections to target resources over these tunnels.
+Agent allows you to seamlessly connect to on-premises resources without exposing any ports or changing network configuration. It establishes a reverse tunnel back to idemeum Proxy Service, which in turn will forward client connections to target resources over these tunnels.
 
 
 ![Agent tunnel](../remote-access/images/reverse-tunnel.png)
