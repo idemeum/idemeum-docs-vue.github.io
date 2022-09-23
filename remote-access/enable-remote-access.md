@@ -1,14 +1,12 @@
 # Enable remote access infrastructure
 
-## Overview
-
 ::: warning Enable Remote Access
 
 Remote Access infrastructure is not enabled by default when you sign up for idemeum tenant. You will need to enable remote access in admin portal, so that we can automatically provision cloud proxy infrastructure for your tenant. 
 
 :::
 
-### How to enable remote access
+## How to enable remote access
 
 * Navigate to idemeum admin portal by clicking on admin portal icon or directly accessing `tenant-name.idemeum.com/adminportal`
 
@@ -26,9 +24,11 @@ Typically it will take up to 10 minutes to provision remote access infrastructur
 
 :::
 
-* Once provisioning is complete, we will notify you in the notifications tray in the admin portal
+* Once provisioning is complete, we will notify you in the notifications tray in the admin portal, and the status of provisioining will be reflected in `Settings` section
 
 ![Notification](../remote-access/images/notification-remote-infrastructure.png)
+
+![Complete](../remote-access/images/provisioning-complete.png)
 
 * You can also see audit logs for infrastructure provisioning process
 

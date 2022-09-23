@@ -55,7 +55,10 @@ module.exports = {
 				  collapsible: true,
 		        children: [
 		          {text: 'Overview',link: '/remote-access/secure-remote-access-overview.html',},
-		          {text: 'Enable remote access infrastrucrure',link: '/remote-access/enable-remote-access.html',},
+		          {text: 'Enable remote access',link: '/remote-access/enable-remote-access.html',},
+		          {text: 'Remote web applications',link: '/remote-access/remote-web-app.html',},
+		          {text: 'Remote SSH servers',link: '/remote-access/remote-ssh-server.html',},
+		          {text: 'Install idemeum agent',link: '/remote-access/install-agent.html',},
 
 		        ],
 		      },

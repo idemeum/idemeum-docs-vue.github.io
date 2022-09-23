@@ -3,11 +3,11 @@
 
 ## Overview
 
-idemeum offers cloud proxy to access your infrastructure and private cloud applications.
+
 
 ::: tip What is Secure Remote Access?
 
-With idemeum remote access infrastructure you can:
+idemeum offers cloud proxy to access your infrastructure and private cloud applications. By using idemeum Remote Access you can:
 
 * Replace your legacy VPN and centralize passwordless access to all on-premises resources including web applications, SSH servers, and RDP desktops
 * Eliminate passwords and replace them with short-lived certificates
