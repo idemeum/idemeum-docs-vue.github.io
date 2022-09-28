@@ -48,6 +48,7 @@ module.exports = {
 		          {text: 'Introduction', link: '/introduction',},
 		          {text: 'How it works', link: '/how-it-works.html',},
 		          {text: 'Try idemeum free', link: '/self-service-onboarding.html',},
+		          {text: 'Downloads', link: '/downloads.html',},
 		        ],
 		      },
 		      {
