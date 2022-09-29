@@ -45,9 +45,9 @@ module.exports = {
 		        text: 'Getting started',
 				collapsible: true,
 		        children: [
-		          {text: 'Introduction', link: '/introduction',},
-		          {text: 'How it works', link: '/how-it-works.html',},
-		          {text: 'Try idemeum free', link: '/self-service-onboarding.html',},
+		          {text: 'Introduction', link: '/introduction.html',},
+		          {text: 'Quickstart', link: '/quickstart.html',},
+		          {text: 'How platform works', link: '/how-it-works.html',},
 		          {text: 'Downloads', link: '/downloads.html',},
 		        ],
 		      },

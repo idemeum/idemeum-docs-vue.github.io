@@ -1,7 +1,5 @@
 # Welcome to idemeum
 
-![Portal](./images/portal.png)
-
 ## What is idemeum?
 
 ::: tip Zero Trust Platform
