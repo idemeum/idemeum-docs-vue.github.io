@@ -94,6 +94,12 @@ You can learn more about user idemeum [Passwordless Single Sign-On](./passwordle
 ## Step 5: Integrate remote applications and servers
 You can also integrate your on-premises applications and servers with idemeum without publicly exposing these resources. As a result you can access your infrastructure without passwords. 
 
+::: warning Enable remote access infrastructure
+
+Navigate to `Settings` -> `Secure remote access` and enable infrastructure. You can learn more [here](./remote-access/enable-remote-access.html). 
+
+:::
+
 * Navigate to `Applications` -> `Add app` and chose what to add - **on-premises web application** or **server**
 
 ![Integrate infra](./quickstart/app-server.png)
