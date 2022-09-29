@@ -5,6 +5,10 @@ Follow these steps to create your platform to manage access to applications and 
 
 [[toc]]
 
+## Video overview
+
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/GZQsWGMz_x8' frameborder='0' allowfullscreen></iframe></div>
+
 ## Step 1: Sign up for idemeum cloud tenant
 idemeum is passwordless, therefore you first need to set up idemeum mobile application so that you can access everything with biometrics.
 
