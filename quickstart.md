@@ -143,6 +143,7 @@ You can learn more about user idemeum [entitlements](./application-entitlements.
 
 If you have any questions you can let us know:
 
-* Drop us a note ar [support@idemeum.com](mailto:support@idemeum.come)
+* Drop us a note at [support@idemeum.com](mailto:support@idemeum.come)
 * Your idemeum portal has built-in chat at the bottom right of the screen
+* Join our [Slack community](https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA)
 

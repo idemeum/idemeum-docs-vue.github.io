@@ -20,15 +20,15 @@ module.exports = {
 	    navbar: [
 			{
 			 text: 'Resources',
-			 children: [{text:'Contact', link:'https://idemeum.com/contact'}, {text:'Blog', link:'https://blog.idemeum.com'}],
+			 children: [{text:'Contact', link:'https://idemeum.com/contact'}, {text:'Blog', link:'https://blog.idemeum.com'}, {text: 'Changelog', link: 'https://idemeum.com/changelog',}],
 		},
-  	      {
-  	        text: 'Changelog',
-  	        link: 'https://idemeum.com/changelog',
-  	      },
 	      {
 	        text: 'Integrations',
 	        link: 'https://integrations.idemeum.com',
+	      },
+	      {
+	        text: 'Slack community',
+	        link: 'https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA',
 	      },
 	      {
 	        text: 'Try idemeum',
