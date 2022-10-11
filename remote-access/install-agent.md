@@ -7,16 +7,25 @@
 
 ## Supported installation options
 
-|     Method                  | Operating systems              |
+|    OS                       | Architectures                  |
 | :----------------------     |:-------------------------------|
-| Automated script install    | Linux / 64 bit (amd)           |
-| Manual tar install          | Linux / 64 bit (amd)           |
+| Amazon Linux 2              | `amd64`          |
+| CentOS 7                    | `amd64`           |
+| CentOS 8                    | `amd64`           |
+| CentOS Stream 9                    | `amd64`           |
+| Fedora 36                    | `amd64`           |
+| Red Hat Enterprise Linux 9                   | `amd64`           |
+| Ubuntu 20.04                | `amd64`           |
+| Ubuntu 22.04                   | `amd64`           |
+| openSUSE Leap 15.4                  | `amd64`           |
 
 ## Where to install idemeum agent
 The machine where the idemeum agent is installed needs to have Internet access to communicate with idemeum cloud.
 
-* **Remote Web Application** - install on any machine in your network as long as it can reach web application over HTTTP protocol. 
-* **SSH server** - install on the same server that you want to access over SSH.
+|    Application                       | Location                  |
+| :----------------------     |:-------------------------------|
+| Remote web application              | Install on any machine in your network as long as it can reach web application over HTTTP protocol           |
+| SSH server              | Install on the same server that you want to access over SSH       |
 
 
 ## Install idemeum agent
