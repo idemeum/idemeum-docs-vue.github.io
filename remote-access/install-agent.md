@@ -3,7 +3,7 @@
 [[toc]]
 
 ## Overview
-[idemeum agent](../remote-access/secure-remote-access-overview.html#agent) creates an outbound tunnel from your private network back to idemeum Proxy Service, so that your employees can connect to internal resources from anywhere without VPN. 
+[idemeum agent](../remote-access/secure-remote-access-overview.html#agent) creates an outbound tunnel from your private network back to idemeum Proxy Service, so that your employees can connect to internal resources from anywhere without VPN.
 
 ## Supported installation options
 
@@ -26,7 +26,7 @@ The machine where the idemeum agent is installed needs to have Internet access t
 | :----------------------     |:-------------------------------|
 | Remote web application              | Install on any machine in your network as long as it can reach web application over HTTTP protocol           |
 | SSH server              | Install on the same server that you want to access over SSH       |
-
+| Remote desktop server              | Install on a linux machine that can talk to idemeum cloud and your LDAP server       |
 
 ## Install idemeum agent
 ### Automated script installation
@@ -34,7 +34,7 @@ The machine where the idemeum agent is installed needs to have Internet access t
 
 ![Agent script](../remote-access/images/agent-script.png)
 
-* Run this command on your server and the agent will be automatically installed, configured, and registered with idemeum. 
+* Run this command on your server and the agent will be automatically installed, configured, and registered with idemeum.
 
 ![Install agent output](../remote-access/images/install-output.png)
 
@@ -67,7 +67,7 @@ tar -xvf idemeum-remote-access-v1.0.0-linux-amd64-bin.tar.gz
 # Navigate to idemeum directory
 cd idemeum
 # Copy contents of YAML file to clipboard and paste to a new yaml file on target machine.
-# You can open editor using editor like vim 
+# You can open editor using editor like vim
 vi myagent.yaml
 # Install agent using following command
 sudo bash agent-setup myagent myagent.yaml
