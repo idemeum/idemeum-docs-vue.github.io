@@ -1,4 +1,4 @@
-# Configure Active Directory for idemeum Remote Desktop support
+# Domain Controller Configuration for Remote Desktop Support
 
 [[toc]]
 
@@ -10,9 +10,9 @@ In order to use idemeum for passwordless access to remote desktops in your priva
 
 ::: warning Remote Desktops need to be connected to an Active Directory domain
 
-idemeum can only provide remote access to Windows desktops that are connected to an Active Directory domain. The Active Directory domain should be configured for LDAPS connections.
-In order to support the LDAPS connections you need to configure the AD CS (https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/). The Windows server that is running the Certificate Authority has to have Trusted Platform Module (TPM) support.
-The supported Windows versions are: Windows Server 2012 R2 / Windows 10 or newer
+* idemeum can only provide remote access to Windows desktops that are connected to an Active Directory domain. The Active Directory domain should be configured for LDAPS connections.
+* In order to support the LDAPS connections you need to configure the [AD CS](https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/). The Windows server that is running the Certificate Authority has to have Trusted Platform Module (TPM) support.
+* The supported Windows versions are: Windows Server 2012 R2 / Windows 10 or newer
 :::
 
 ## Active Directory Configuration
@@ -22,7 +22,7 @@ If you already have an active directory setup you can skip to the next step. If 
 
 In the script below please set the **domain** variable to your domain name.
 
-```
+``` powershell
 $ErrorActionPreference = "Stop"
 
 $domain = 'idemeumdemo.com'
@@ -49,7 +49,8 @@ Restart-Computer -Force
 
 ### Enable Active Directory Certificate Authority
 In order to enable the Certificate Authority you need to run the following powershell script
-```
+
+``` powershell
 $ErrorActionPreference = "Stop"
 
 Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
@@ -62,7 +63,7 @@ Idemeum requires a service account to connect to your Active Directory domain. W
 
 To create the service account, open a PowerShell prompt and copy-paste in the commands below. **A password for this service account will be randomly generated, but immediately discarded. Idemeum does not need this password,** as it uses x509 certificates for LDAP authentication. You can reset the password for this account should you need to perform password authentication.
 
-```
+``` powershell
 #Creates an idemeum service account
 $Name="Idemeum Service Account"
 $SamAccountName="svc-idemeum"
@@ -110,7 +111,7 @@ The Idemeum service account is only needed to authenticate over LDAP. We should 
 
 Open a PowerShell prompt and change the $GPOName variable below to your desired GPO name, or leave the recommended name:
 
-```
+``` powershell
 $GPOName="Block svc-idemeum Interactive Login"
 # Create the new GPO and link with target domain
 New-GPO -Name $GPOName | New-GPLink -Target $((Get-ADDomain).DistinguishedName)

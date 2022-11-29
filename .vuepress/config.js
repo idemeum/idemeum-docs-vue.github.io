@@ -59,6 +59,15 @@ module.exports = {
 		          {text: 'Enable remote access',link: '/remote-access/enable-remote-access.html',},
 		          {text: 'Remote web applications',link: '/remote-access/remote-web-app.html',},
 		          {text: 'Remote SSH servers',link: '/remote-access/remote-ssh-server.html',},
+  		          {
+  				    text: 'Remote Windows Desktops',
+  					collapsible: true,
+  					children: [
+  					  {text: 'Overview',link: '/remote-access/remote-windows-desktop-overview.html',},
+  					  {text: 'Domain controller configuration',link: '/remote-access/windows-active-domain-configuration.html',},
+  					  {text: 'Desktops setup',link: '/remote-access/remote-windows-desktop.html',},
+  					],
+  				  },
 		          {text: 'Install idemeum agent',link: '/remote-access/install-agent.html',},
 
 		        ],
