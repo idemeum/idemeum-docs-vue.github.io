@@ -1,23 +1,8 @@
-# Remote Windows Desktop access
+# Windows Desktops Setup
 
 [[toc]]
 
-## Overview
-
-A `Remote Windows Desktop` is any computer, physical or virtual, that runs Microsoft Windows operating system (Windows Server 2012 R2 / Windows 10 or newer), resides on a company's private network, and can be accessed over Remote Desktop Protocol (RDP). The private network can be on-premises as well as in the cloud: AWS, Azure, Google Cloud etc.
-
-## Prerequisites
-
-::: warning Enable remote access infrastructure
-
-Before integrating remote Windows desktops with idemeum, make sure you [enable remote access](../remote-access/enable-remote-access.html) infrastructure, as it is not enabled by default.
-:::
-
-::: warning The remote Windows hosts have to be connected to an Active Directory domain.
-
-:::
-
-## Connect remote Windows desktop to idemeum
+## Connect remote Windows desktops to idemeum
 
 Let's assume that a company ACME, Inc is developing a Windows application and the developers need to make sure that the application can be installed successfully on Windows 10 and Windows 11 desktops. The ACME, Inc deployed a Windows 10 and a Windows 11 desktops that will be made available for developers and testing engineers to run some sanity tests before releasing the application to production. These desktops can be accessed over RDP protocol and are domain joined, but the users accessing it must be on the company's private network.
 
@@ -53,7 +38,7 @@ The administrator wants to allow some users to access these desktops over the in
 
 :::
 
-* When a remote Windows desktop is inavtivated you will see a red exclamation mark on the `My applications` page. Moreover, admin will receive a notification in the notification tray.
+* When a remote Windows desktop is inactivated you will see a red exclamation mark on the `My applications` page. Moreover, admin will receive a notification in the notification tray.
 
 ![Windows desktop not available](../remote-access/images/remote-desktop-inactive-admin-alert.png)
 
@@ -65,6 +50,12 @@ The administrator wants to allow some users to access these desktops over the in
 * You can `Edit` or `Remove` the desktop configuration from idemeum. When you remove a desktop configuration, all the desktops that were synced by that configuration will also be deleted and will not be available to the users that had entitlements to those desktops.
 
 ![Windows desktop card](../remote-access/images/windows-desktop-card.png)
+
+::: warning If you change desktop configuration
+
+If you change the configuration for remote desktops, it will not be immediately reflected in idemeum. You will need to stop the agent, update configuration file, and restart the agent. Follow the steps in the [agent configuration page](../remote-access/install-agent.html) for more information
+
+:::
 
 ## Give access to Windows desktops
 * You will first have to install the Windows agent so idemeum can sync the desktops from your domain controller. See details on how to install the idemeum agent.
@@ -87,10 +78,6 @@ You can learn more about how [groups](../group-management.html) and [entitlement
 ## Access Windows desktops
 * You can launch Windows desktops in the same way you would access any other application - from **browser user portal**, from **extension**, and **mobile application**.
 * Once you click on the remote desktop tile, you will choose the `username` to login with, and the remote desktop session will open in the browser.
-
-TODO: Add the recording to the launching of a remote desktop
-<div class='embed-container'><iframe src='https://www.youtube.com/embed/NP-bg_xBzDo' frameborder='0' allowfullscreen></iframe></div>
-
 
 ## Audit events
 

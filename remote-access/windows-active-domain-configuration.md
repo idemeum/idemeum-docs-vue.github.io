@@ -1,4 +1,4 @@
-# Domain Controller Configuration for Remote Desktop Support
+# Domain Controller Configuration
 
 [[toc]]
 
@@ -18,9 +18,15 @@ In order to use idemeum for passwordless access to remote desktops in your priva
 ## Active Directory Configuration
 
 ### Setup Active Directory
-If you already have an active directory setup you can skip to the next step. If you are setting up a fresh Active Directory domain the on the Windows server where you want to install the Active Directory run the following Powershell script. The Windows Server has to have TPM support.
 
-In the script below please set the **domain** variable to your domain name.
+::: tip Do you have Active Directory configured?
+
+If you already have an active directory setup you can skip to the next step. 
+:::
+
+If you are setting up a fresh Active Directory domain the on the Windows server where you want to install the Active Directory run the following Powershell script. The Windows Server has to have TPM support.
+
+In the script below please set the `$domain` variable to your domain name.
 
 ``` powershell
 $ErrorActionPreference = "Stop"
@@ -48,7 +54,7 @@ Restart-Computer -Force
 ```
 
 ### Enable Active Directory Certificate Authority
-In order to enable the Certificate Authority you need to run the following powershell script
+In order to enable the Certificate Authority you need to run the following powershell script:
 
 ``` powershell
 $ErrorActionPreference = "Stop"
@@ -104,12 +110,12 @@ dsacls "CN=NTAuthCertificates,CN=Public Key Services,CN=Services,CN=Configuratio
 dsacls "CN=NTAuthCertificates,CN=Public Key Services,CN=Services,CN=Configuration,$DomainDN" /I:T /G "$($SamAccountName):WP;cACertificate;"
 ```
 
-#### Do not allow interactive login for idemeum service account
-The Idemeum service account is only needed to authenticate over LDAP. We should not allow interactive login using this account, like your regular users. In order to restrict the interactive login we need to create a new Group Policy Object (GPO) linked to your entire domain, and then deny it interactive login.
+### Do not allow interactive login for idemeum service account
+idemeum service account is only needed to authenticate over LDAP. We should not allow interactive login using this account, like your regular users. In order to restrict the interactive login we need to create a new Group Policy Object (GPO) linked to your entire domain, and then deny it interactive login.
 
-**Step 1**: Create the Group Policy object
+#### Step 1: Create the Group Policy object
 
-Open a PowerShell prompt and change the $GPOName variable below to your desired GPO name, or leave the recommended name:
+Open a PowerShell prompt and change the `$GPOName` .variable below to your desired GPO name, or leave the recommended name:
 
 ``` powershell
 $GPOName="Block svc-idemeum Interactive Login"
@@ -117,7 +123,7 @@ $GPOName="Block svc-idemeum Interactive Login"
 New-GPO -Name $GPOName | New-GPLink -Target $((Get-ADDomain).DistinguishedName)
 ```
 
-**Step 2**: Deny Interactive Login
+#### Step 2: Deny Interactive Login
 
 1. Open the program named `Group Policy Management` and find the GPO you just created (`$FOREST > Domains > $DOMAIN > Group Policy Objects > Block idemeum-svc Interactive Login`), right-click on it and select `Edit...` from the context menu.
 2. Select: `Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies > User Rights Assignment`
@@ -134,16 +140,16 @@ For added security, consider disabling username/password authentication complete
 ### Allow connections from idemeum
 We need to configure Active Directory to accept and allow remote desktop connections from idemeum. This includes telling your computers to trust Idemeum CA, allowing the certificate-based smart card authentication, and ensuring RDP is enabled.
 
-**Step 1** : Export Idemeum certificate
+#### Step 1: Export Idemeum certificate
 
-As an admin login to the Admin portal and from Applications -> Metadata page you can download the idemeum Remote Access certificate on your Windows machine. You can click the download button and download it in der format or copy it as a pem format and use an online tool to convert it to a der format.
+As an admin login to the Admin portal and from `Applications -> Metadata` page you can download the idemeum Remote Access certificate on your Windows machine. You can click the download button and download it in der format or copy it as a pem format and use an online tool to convert it to a der format.
 
 ![Download Idemeum Remote Access cert](../remote-access/images/idemeum-remote-access-cert.png)
 
-**Step 2** : Create a new GPO with Idemeum as Root CA
+#### Step 2: Create a new GPO with Idemeum as Root CA
 
 Open a powershell editor and run the following script:
-```
+``` powershell
 $GPOName="Idemeum Access Policy"
 New-GPO -Name $GPOName | New-GPLink -Target $((Get-ADDomain).DistinguishedName)
 ```
@@ -159,11 +165,11 @@ New-GPO -Name $GPOName | New-GPLink -Target $((Get-ADDomain).DistinguishedName)
 
 ![Import Idemeum Remote Access cert](../remote-access/images/import-idemeum-remote-access-cert.png)
 
-**Step 3**: Publish the Idemeum CA to the Active Directory domain
+#### Step 3: Publish the Idemeum CA to the Active Directory domain
 
 On a machine which is joined to your domain and logged in as an account in the `Domain Administrators` group, run the two commands below at a PowerShell prompt to publish the Idemeum CA to your Active Directory domain (PathToCertFile.der is the path to where you have locally saved the Idemeum certificate):
 
-```
+```powershell
 certutil –dspublish –f <PathToCertFile.der> RootCA
 ```
 
@@ -173,12 +179,12 @@ This step enables the domain controllers to trust the Idemeum CA, which will all
 When using AWS Managed Active Directory, you should run the command above using an account which is part of the AWS Delegated Domain Administrators group, such as the AWS-provided admin account.
 :::
 
-**Step 4**: Publish the Idemeum CA to the NTAuth Store
+#### Step 4: Publish the Idemeum CA to the NTAuth Store
 
 In order for authentication with idemeum-issued certificates to succeed, the Idemeum CA needs to be published to the enterprise NTAuth store. Idemeum will periodically publish its CA after it is able to authenticate, but this step needs to be performed manually the first time in order for Idemeum to have LDAP access.
 
 Open powershell and run the following script.
-```
+```powershell
 certutil –dspublish –f <PathToCertFile.der> NTAuthCA
 #Force the retrieval of the CA from LDAP. While this step is not required, it speeds up the process and allows you to proceed to the next steps without waiting for the certificate to propagate.
 certutil -pulse

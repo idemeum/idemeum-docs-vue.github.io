@@ -65,7 +65,7 @@ module.exports = {
   					children: [
   					  {text: 'Overview',link: '/remote-access/remote-windows-desktop-overview.html',},
   					  {text: 'Domain controller configuration',link: '/remote-access/windows-active-domain-configuration.html',},
-  					  {text: 'Desktops setup',link: '/remote-access/remote-windows-desktop.html',},
+  					  {text: 'Windows desktops setup',link: '/remote-access/remote-windows-desktop.html',},
   					],
   				  },
 		          {text: 'Install idemeum agent',link: '/remote-access/install-agent.html',},

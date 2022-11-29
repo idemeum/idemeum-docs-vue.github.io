@@ -30,4 +30,4 @@ idemeum supports accessing Windows hosts using RDP protocol. We support the foll
 3. **Set up desktops in idemeum**
 	* You will need to [add desktops to your idemeum cloud](../remote-access/remote-windows-desktop.html) portal and give access to users using entitlement rules.
 4. **Install idemeum agent**
-	* In order to access Windows Hosts from anywhere without VPN you need to [install idemeum agent](../remote-access/install-agent.html) in your environment. 
+	* In order to access Windows Hosts from anywhere without VPN you need to [install idemeum agent](../remote-access/remote-windows-desktop.html#install-idemeum-agent) in your environment. 
