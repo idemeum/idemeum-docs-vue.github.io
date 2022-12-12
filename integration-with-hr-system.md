@@ -23,8 +23,9 @@ With local user source admins can create users manually and specify personal cla
 ![User source](./images/local-source.png)
 
 ::: warning Advanced settings
-
-* **Off-boarding frequency** - with this configuration you can choose how often you want idemeum to check for off-boarded employees using local user source. Say you delete user manually, and set this interval to 4 hours. Every 4 hours idemeum will check for off-boarded user to remove access and de-provision applications. 
+* **Off-boarding frequency** - with this configuration you can choose how often you want idemeum to check for off-boarded employees using local user source. Say you delete user manually, and set this interval to 4 hours. Every 4 hours idemeum will check for off-boarded user to remove access and de-provision applications.
+* **Email Invites** - Choose to either automatically send invitation email to users as soon as they are added by administrator or manually through user actions on user management tab.
+* **Custom Attrbiutes** - Define additional attributes that can be added to local users.
 
 :::
 

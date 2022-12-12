@@ -29,6 +29,7 @@ The administrator wants to allow some users to access Grafana over the internet 
 	* **Display name** - application name that will appear on the end user portal. It can contain any characters up to a maximum of 256 chars.
 	* **Application Name** - this name will be part of the host name for accessing the application. Thus it can contain only characters that are allowed in a domain: [a-z], [A-Z], 0-9 and '-' (dash) up to a maximum of 63 characters.  '-' (dash) cannot be the first character.
 	* **Internal URL** - this is the URL that idemeum will redirect the call once we authenticate and authorize that the user has access to the application. In our example this would be: `http://localhost:3000`. If the agent is not installed on the same application server, then you can use domain name or IP address to reach application on internal network.
+	* **Username Expression** - Help users automatically fill `username` for this remote application by configuraing usernames using expressions. Expression `${user.email}` will automatically autofill user corporate email as username for this app.
 	
 ![Add Grafana](../remote-access/images/add-grafana.png)
 

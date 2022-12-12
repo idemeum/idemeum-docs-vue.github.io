@@ -18,6 +18,10 @@ For [local user source](./integration-with-hr-system.html#local-user-source) you
 
 ![](./images/local-user-details.png)
 
+* You can send invitation email to users that are not onboarded yet.
+
+![](./images/local-user-invitation.png)
+
 ::: tip Employee onboarding
 
 Make sure you enter corporate email address as well as personal email address or personal phone number, so that [onboarding](./employee-onboarding.html) with Passwordless MFA will work for the user. 
