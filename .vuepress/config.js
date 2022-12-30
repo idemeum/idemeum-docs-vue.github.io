@@ -85,6 +85,7 @@ module.exports = {
 		          {text: 'Automated provisioning',link: '/lifecycle-management.html',},
 		          {text: 'Application entitlements',link: '/application-entitlements.html',},
 		          {text: 'Group management',link: '/group-management.html',},
+				  {text: 'Security Policies',link: '/security-policies.html',},
 		        ],
 		      },
 		      {
