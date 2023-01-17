@@ -45,4 +45,10 @@ Users subjected to a device trust policy can only use the idemeum web portal on 
 Policy also allows administrator to completely block a mobile platform as shown below.
 
 ![Device Trust Policy](./images/security-policies/security-policies-device-trust.png)
+![Device Trust Policy Lock/Unlock](./images/security-policies/security-policies-device-posture-locking.png)
 
+## Network Policy
+
+Users subjected to a network policy can only login from the devices with public ipv4 address that match the policy rules.
+
+![Device Trust Policy](./images/security-policies/security-policies-network.png)
