@@ -118,6 +118,13 @@ module.exports = {
 		        ],
 		      },
 		      {
+		        text: 'Authentication proxy',
+				collapsible: true,
+		        children: [
+		          {text: 'Configuration',link: '/authproxy.html',},
+		        ],
+		      },
+		      {
 		        text: 'Device recovery',
 				  collapsible: true,
 		        children: [
