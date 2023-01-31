@@ -1,23 +1,17 @@
 ---
 home: true
-title: Unified Passwordless Platform
+title: Zero Trust Platform
 actions:
-  - text: Get Started
+  - text: Get started
     link: /introduction
     type: primary
 features:
-  - title: Secure Remote Access	
-    details: Replace legacy VPN with modern zero trust solution to access on-premises applications, SSH servers, RDP desktops, and Kubernetes clusters.
-  - title: Passwordless SSO
-    details: Automate employee onboarding and centralize one-click access to cloud applications from anywhere on any device.
-  - title: Password Vault
-    details: Cloud powered yet zero-knowledge password vault to securely store, share, and fill your credentials across company resources.
-  - title: Passwordless MFA
-    details: Eliminate passwords for everything your employees access – SSO apps, Wi-Fi, VPN, desktops – and replace them with biometrics.
-  - title: Automated provisioning
-    details: Automatically create and remove employee SaaS app accounts.
-  - title: Cloud Radius
-    details: Cloud Radius without the pain of managing servers.
+  - title: Devices
+    details: Passwordless access to Windows and macOS devices with unpshishable MFA or RFID cards
+  - title: Applications
+    details: Centralized passwordless access to cloud or on-premises applications without VPN
+  - title: Infrastructure
+    details: Passwordless access to infrastructure without VPN - Windows, Linux, databases, and more
 
-footer: © 2022 idemeum, Inc.
+footer: © 2023 idemeum, Inc.
 ---

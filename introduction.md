@@ -2,36 +2,26 @@
 
 ## What is idemeum?
 
-::: tip Zero Trust Platform
-idemeum offers one place to manage access to your applications and infrastructure, without passwords.
-:::
+idemeum is a zero-trust platform that offers one place to manage access to devices, applications, and infrastructure. 
 
-idemeum helps organizations adopt the zero trust model through its scalable and secure enterprise cloud platform. With its all-in-one platform, clients can securely manage access to applications and infrastructure, integrate with all major business systems and manage their end-users using a single pane of glass.
+Employees can pick a mobile device or an existing RFID badge and access pretty much any company resource without passwords, including cloud or on-premises applications, SSH or RDP servers, databases, Windows or Mac computers, and more. 
 
-We offer a unique platform that combines **Privileged Access Management (PAM)**, **Workforce Identity (IAM)**, and **Passwordless Technology**. Instead of deploying a VPN to access your private cloud apps, Single Sign-On to access your SaaS apps, PAM solution to access your infrastructure, and MFA to secure access, idemeum combines all of that in one platform.
+![](./images/overview-diagram.png)
 
-## How we can help your business
+idemeum uniquely combines **Privileged Access Management (PAM)**, **Workforce Identity (IAM)**, and **Passwordless Technology**. Instead of deploying a VPN to access your private applications, Single Sign-On (SSO) to access your cloud applications, Privileged Access Management (PAM) solution to access your infrastructure, and Multi-Factor Authentication (MFA) to secure access, idemeum combines all of that in one platform.
 
-1. **Consolidate identity stack to save money** - instead of deploying separate products for PAM and IAM, you can leverage our cloud-based unified platform to access and manage your applications and access to privileged resources.
-2. **Secure company by making access to any resource passwordless** - with our Universal Passwordless MFA you can offer your employees seamless biometrics-based access to applications, desktops, Wi-Fi, VPNs, and infrastructure resources. We support integration with pretty much any resource.
-3. **Manage your cloud applications** - with our Single Sign-On and Automated Provisioning you can automate account creation for onboarding and offer your employees one-click centralized access to any application from any device.
-4. **Secure company passwords** - with zero-knowlege vault you can securely store, share, and auto-fill passwords. 
-5. **Secure privileged access to infrastructure** - with our modern Zero Trust Network access you can replace legacy VPN and secure access to infrastructure, including on-premises apps, SSH servers, RDP desktops, databases, and Kubernetes clusters. 
+idemeum is SaaS hosted on AWS. We try to minimize the footprint of on-premises components that our customers need to deploy. We architected idemeum based on [micro-services architecture](https://blog.idemeum.com/microservice-scalability/) to offer high availability and security.
 
-## Our products
+You can deploy and leverage the power of the whole platform, or choose the components that you need. Check our [pricing and licensing](https://idemeum.com/pricing) page to see what product tiers we offer today. 
 
-### [Secure Remote Access](./remote-access/secure-remote-access-overview.html)
+## How idemeum can help
 
-Replace legacy VPN with modern zero trust solution to access on-premises applications, SSH servers, RDP desktops, Kubernetes clusters - all without passwords.
+There are several ways idemeum can help your business:
 
-### [Passwordless Single Sign-On](./application-catalog.html)
+1. **Eliminate passwords** - with our Universal Passwordless MFA or RFID access you can offer your employees seamless passwordless login to applications, desktops, Wi-Fi, VPNs, and infrastructure resources. We support integration with pretty much any resource.
+2. **Replace legacy VPN with Zero-Trust Network Access (ZTNA)** - with our modern Secure Remote Access you can replace legacy VPN and offer your employees one-click access to infrastructure, including on-premises apps, SSH servers, RDP desktops, databases, and Kubernetes clusters. 
+3. **Consolidate identity stack to save money** - instead of deploying separate products for PAM and IAM, you can leverage our cloud-based unified platform to access and manage your applications and access to privileged resources.
 
-Automate employee onboarding and centralize one-click access to cloud applications from anywhere on any device. Unified portal gives you access to everything you need from one place - applications and infrastructure.
+## Quick demo
 
-### [Password Vault](./password-vault-overview.html)
-
-Cloud-powered zero-knowledge password vault to securely store, share, and fill your credentials across company resources.
-
-### [Passwordless MFA](./mfa-overview.html)
-
-Eliminate passwords for everything your employees access - SSO apps, Wi-Fi, VPN, desktops - and replace them with biometrics.
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/-3StOlDjMrQ' frameborder='0' allowfullscreen></iframe></div>

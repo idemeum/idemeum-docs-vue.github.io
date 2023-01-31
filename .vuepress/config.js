@@ -9,7 +9,7 @@ module.exports = {
   dest: './docs/docs',
   title: 'idemeum docs',
   base: '/',
-  description: 'One platform to manage access to applications and infrastructure, without passwords',
+  description: 'One platform to manage access to devices, applications, and infrastructure, without passwords',
 	
 	theme: defaultTheme({
 	    // default theme config
@@ -47,7 +47,6 @@ module.exports = {
 		        children: [
 		          {text: 'Introduction', link: '/introduction.html',},
 		          {text: 'Quickstart', link: '/quickstart.html',},
-		          {text: 'How platform works', link: '/how-it-works.html',},
 		          {text: 'Downloads', link: '/downloads.html',},
 		        ],
 		      },
