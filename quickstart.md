@@ -1,7 +1,6 @@
-# idemeum quickstart :rocket:
-Welcome!
+# idemeum quick-start :rocket:
 
-Follow these steps to create your platform to manage access to applications and infrastructure.
+Follow these steps to sign up for idemeum tenant and set up basic passwordless integrations.
 
 [[toc]]
 
