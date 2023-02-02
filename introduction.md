@@ -1,5 +1,7 @@
 # Welcome to idemeum
 
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/-3StOlDjMrQ' frameborder='0' allowfullscreen></iframe></div>
+
 ## What is idemeum?
 
 idemeum is a zero-trust platform that offers one place to manage access to devices, applications, and infrastructure. 
@@ -21,7 +23,3 @@ There are several ways idemeum can help your business:
 1. **Eliminate passwords** - with our Universal Passwordless MFA or RFID access you can offer your employees seamless passwordless login to applications, desktops, Wi-Fi, VPNs, and infrastructure resources. We support integration with pretty much any resource.
 2. **Replace legacy VPN with Zero-Trust Network Access (ZTNA)** - with our modern Secure Remote Access you can replace legacy VPN and offer your employees one-click access to infrastructure, including on-premises apps, SSH servers, RDP desktops, databases, and Kubernetes clusters. 
 3. **Consolidate identity stack to save money** - instead of deploying separate products for PAM and IAM, you can leverage our cloud-based unified platform to access and manage your applications and access to privileged resources.
-
-## Quick demo
-
-<div class='embed-container'><iframe src='https://www.youtube.com/embed/-3StOlDjMrQ' frameborder='0' allowfullscreen></iframe></div>
