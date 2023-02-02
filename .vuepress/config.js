@@ -42,7 +42,7 @@ module.exports = {
 
 		      // SidebarItem
 		      {
-		        text: 'Getting started',
+		        text: 'Getting Started',
 				collapsible: true,
 		        children: [
 		          {text: 'Introduction', link: '/introduction.html',},
@@ -50,6 +50,19 @@ module.exports = {
 		          {text: 'Downloads', link: '/downloads.html',},
 		        ],
 		      },
+	      {
+	        text: 'RFID Access',
+			  collapsible: true,
+	        children: [
+	          {text: 'Overview', link: '/rfid/rfid-overview.html',},
+			  {text: 'Architecture', link: '/rfid/rfid-architecture.html',},
+			  {text: 'Login flows and features', link: '/rfid/rfid-supported-flows.html',},
+			  {text: 'RFID readers', link: '/rfid/rfid-readers.html',},
+			  {text: 'Configuration guide', link: '/rfid/rfid-configuration-guide.html',},
+			  {text: 'Shared account login', link: '/rfid/rfid-shared-account.html',},
+			  {text: 'Troubleshooting', link: '/rfid/rfid-troubleshooting.html',},
+	        ],
+	      },
 		      {
 		        text: 'Secure Remote Access',
 				  collapsible: true,
