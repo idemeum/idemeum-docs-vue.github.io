@@ -47,7 +47,7 @@ Follow the following guide to perform Active Directory certificate services set 
 
 ::: warning User matching
 
-When idemeum generates virtual smart card and logs the user into domain workstation, the corporate email address that is extracted from user source need to match either `user logon name` or `email address` in Active Directory user record.
+When idemeum generates virtual smart card and logs the user into domain workstation, the corporate email address that is extracted from user source need to match either `user logon name / user principal name` or `email address` in Active Directory user record.
 
 :::
 

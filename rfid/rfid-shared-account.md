@@ -15,7 +15,7 @@ For example, let's say there is a Windows workstation where everyone needs to lo
 
 ::: warning RFID access only
 
-Today we support access with shared account only for idemeum desktop client that are set up in RFID access more. We do not yet support workstations that need to be accessed with Passwordless MFA.
+Today we support access with shared account only for idemeum desktop client that are set up in RFID access mode. We do not yet support workstations that need to be accessed with Passwordless MFA via QR-code login.
 
 :::
 
@@ -25,7 +25,7 @@ Today we support access with shared account only for idemeum desktop client that
 - Click on `...` menu and choose `Configure shared account`
 
 ![Shared account setup](./images/shared-account.png)
-- Now you can enter shared account `logon name`, and also specify groups users of which can access this workstation with a shared account. Make sure when you enter multiple group names you hit `Enter` for every group.
+- Now you can enter shared account `logon name`, and also specify groups users of which can access this workstation with a shared account. Make sure when you enter multiple group names you hit `Enter` or `Tab` for every group.
 
 ![Shared account setup](./images/account-setup.png)
 - Click `Save`

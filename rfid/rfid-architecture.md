@@ -13,9 +13,9 @@ Today we support Active Directory domain-joined Windows computers. If you have a
 
 There're several major components that will make passwordless login with RFID card possible:
 
-- **idemeum desktop application** - idemeum application will need to be installed on every workstation. Once installed and paired with idemeum cloud tenant, idemeum application will register as credential provider on Windows and will stat processing all login requests with RFID card.
+- **idemeum desktop application** - idemeum application will need to be installed on every workstation. Once installed and paired with idemeum cloud tenant, idemeum application will register as credential provider on Windows and will start processing all login requests with RFID card.
 - **idemeum cloud** - idemeum cloud will serve as a management plane for RFID access, where you can manage users, workstations, as well as entitlements to define who has access to what. 
-- **User source** - idemeum will need to have access to user source where the mapping between badge number (encoded on RFID card) and employee corporate email address is maintained. When the badge is scanned, idemeum desktop application will receive badge number, and then it needs to find the corporate email address of the user associated with that badge number. 
+- **User source** - idemeum will need to have access to user source where the mapping between badge number (encoded on RFID card) and employee corporate email address is maintained. When the badge is scanned, idemeum desktop application will receive badge number, and then it needs to find the corporate email address / User Principal Name (UPN) of the user associated with that badge number. 
 - **Domain controller** - idemeum desktop application will generate a virtual smart card for each user, and will use that smart card to log employee into domain environment without passwords.
 
 ### User login flow
