@@ -11,8 +11,8 @@ const OS = {
 };
 var desktopLoginAppVersionChangeLogDetails = [];
 
-$windowsLogoImg.src = `https://asset.${ORIGIN}/assets/images/windows-svgrepo-com.png`
-$macLogoImg.src = `https://asset.${ORIGIN}/assets/images/apple-svgrepo-com.png`
+$windowsLogoImg.src = `https://docs.${ORIGIN}/changelog/assets/images/windows-svgrepo-com.png`
+$macLogoImg.src = `https://docs.${ORIGIN}/changelog/assets/images/apple-svgrepo-com.png`
 
 
 
