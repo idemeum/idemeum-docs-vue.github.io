@@ -172,6 +172,13 @@ module.exports = {
 		          {text: 'Terms of service',link: '/terms-of-service.html',},
 		        ],
 		      },
+		      {
+		        text: 'Changelog',
+				  collapsible: true,
+		        children: [
+		          {text: 'Desktop app versions',link: '/changelog/desktop-app-changelog.html',},
+		        ],
+		      },
 		    ],
 
 	  }),
