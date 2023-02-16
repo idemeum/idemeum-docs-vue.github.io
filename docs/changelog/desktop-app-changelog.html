@@ -98,13 +98,13 @@
     <script>
 
         const scriptCdns = [
-            'assets/js/versioning.js',
-            'assets/js/jquery-3.4.1.min.js'
+            'changelog/versioning.js',
+            'changelog/jquery-3.4.1.min.js'
         ];
 
         for (let cdn of scriptCdns) {
             let scriptElement = document.createElement('script');
-            scriptElement.src = `https://asset.${ORIGIN}/${cdn}`;
+            scriptElement.src = `https://docs.${ORIGIN}/${cdn}`;
             document.body.appendChild(scriptElement);
         }
         
