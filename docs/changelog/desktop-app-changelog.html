@@ -8,22 +8,19 @@
     <title>Release versions</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    <!-- <link rel="stylesheet" href="https://asset.idemeum.com/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css"> -->
 
     <script>
         const ORIGIN = window.location.host.endsWith('idemeum.com') ? 'idemeum.com' : window.location.host.endsWith('idemeum.in') ? 'idemeum.in' : 'idemeumlab.com';
         const stylesCdns = [
-            'assets/css/bootstrap.min.css',
-            'assets/css/versioning.css'
+            'changelog/bootstrap.min.css',
+            'changelog/versioning.css'
         ];
 
         for (let cdn of stylesCdns) {
 
             let linkElement = document.createElement('link');
             linkElement.rel = "stylesheet";
-            linkElement.href = `https://asset.${ORIGIN}/${cdn}`;
+            linkElement.href = `https://docs.${ORIGIN}/${cdn}`;
             document.head.appendChild(linkElement)
         }
     </script>
