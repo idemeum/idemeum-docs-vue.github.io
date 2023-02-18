@@ -176,7 +176,7 @@ module.exports = {
 		        text: 'Changelog',
 				  collapsible: true,
 		        children: [
-		          {text: 'Desktop app versions',link: 'https://docs.idemeum.com/changelog/desktop-app-changelog.html',},
+		          {text: 'Desktop app versions',link: 'https://docs.idemeum.com/changelog/versioning.html',},
 		        ],
 		      },
 		    ],
