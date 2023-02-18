@@ -45,12 +45,7 @@ body {
 }
 
 .navigation-menu {
-  min-width: 230px;
   height: calc(100vh - 54px) !important;
-}
-
-#versions-info {
-  width: calc(100vw - 230px) !important;
 }
 
 nav ul {
@@ -115,7 +110,6 @@ nav ul ul .active,
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.44px;
-  text-decoration: underline;
   color: var(--idemeum-primary-color);
 }
 
@@ -150,6 +144,7 @@ nav ul ul .active,
   line-height: 18px;
   letter-spacing: 0.44px;
   color: var(--idemeum-primary-color);
+  text-decoration: none !important;
 }
 
 .material-icons.md-18 {

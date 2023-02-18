@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Release versions</title>
+    <link rel="icon" type="image/x-icon" href="https://asset.idemeum.com/userportal/assets/img/favicon.ico">
+    <title>Desktop Client app</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    
     <script>
         const ORIGIN = window.location.host.endsWith('idemeum.com') ? 'idemeum.com' : window.location.host.endsWith('idemeum.in') ? 'idemeum.in' : 'idemeumlab.com';
         const stylesCdns = [
-            'changelog/bootstrap.min.css',
-            'changelog/versioning.css'
+            'assets/css/bootstrap.min.css',
+            'assets/css/versioning.css'
         ];
 
         for (let cdn of stylesCdns) {
 
             let linkElement = document.createElement('link');
             linkElement.rel = "stylesheet";
-            linkElement.href = `https://docs.${ORIGIN}/${cdn}`;
-            document.head.appendChild(linkElement)
+            linkElement.href = `https://asset.${ORIGIN}/${cdn}`;
+            document.head.appendChild(linkElement);
         }
     </script>
 
@@ -42,7 +43,7 @@
     <div class="container-fluid row m-0 p-0">
     
         <nav 
-            class="navigation-menu p-1">
+            class="navigation-menu col-lg-2 col-md-3 col-4 p-1">
             <ul>
                 <li id="windows-list"
                     class='nav-sub-menu'>
@@ -87,24 +88,23 @@
         </nav>
 
         <div 
+            class="col-lg-10 col-md-9 col-8"
             id="versions-info">
         </div>
 
     </div>
 
     <script>
-
         const scriptCdns = [
-            'changelog/versioning.js',
-            'changelog/jquery-3.4.1.min.js'
+            'assets/js/jquery-3.4.1.min.js',
+            'assets/js/versioning.js',
         ];
 
         for (let cdn of scriptCdns) {
             let scriptElement = document.createElement('script');
-            scriptElement.src = `https://docs.${ORIGIN}/${cdn}`;
+            scriptElement.src = `https://asset.${ORIGIN}/${cdn}`;
             document.body.appendChild(scriptElement);
         }
-        
     </script>
 
 </body>

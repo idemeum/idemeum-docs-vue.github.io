@@ -9,10 +9,10 @@ const OS = {
     MAC: 'macOS',
     LINUX: 'Linux'
 };
-var desktopLoginAppVersionChangeLogDetails = [];
+var desktopAppVersionDetails = [];
 
-$windowsLogoImg.src = `https://docs.${ORIGIN}/changelog/assets/images/windows-svgrepo-com.png`
-$macLogoImg.src = `https://docs.${ORIGIN}/changelog/assets/images/apple-svgrepo-com.png`
+$windowsLogoImg.src = `https://asset.${ORIGIN}/assets/images/windows-svgrepo-com.png`
+$macLogoImg.src = `https://asset.${ORIGIN}/assets/images/apple-svgrepo-com.png`
 
 
 
@@ -20,10 +20,13 @@ function fetchVersioning() {
 
     const options = {
         method: 'GET',
+        headers: {
+            accept: 'application/vnd.dvmi.desktop.app.version.detail.list+json'
+        }
     };
 
     return new Promise((resolve, reject) => {
-        fetch(`https://dvmi.${ORIGIN}/api/system/info/desktopappchangelog`, options)
+        fetch(`https://dvmi.${ORIGIN}/api/system/info/destopappversion`, options)
             .then((response) => response.json())
             .then((data) => resolve(data))
             .catch(err => reject(err));
@@ -33,34 +36,27 @@ function fetchVersioning() {
 
 function getNavigationItems(navElement, desktopLoginApps) {
 
-    var osName = desktopLoginApps.osName
-    for (var version of desktopLoginApps.versions) {
-        navElement.innerHTML += '<ul style="display:none">'
-            + `<li  
+    if (desktopLoginApps) {
+
+        var osName = desktopLoginApps.osName;
+        for (var version of desktopLoginApps.versions) {
+            navElement.innerHTML += '<ul style="display:none">'
+                + `<li  
                     class="nav-sub-menu-version" 
                     data-os="${osName}" 
                     data-version="${version.version}">
                     v${version.version}
                 </li>`
-            + '</ul>';
+                + '</ul>';
+        }
     }
 
 }
 
-
-
-function getOSNameElement(osName) {
-    if (osName == OS.MAC) {
-        return `<div class="os-name-header p-2 pt-3">macOS</div>`;
-    }
-    else if (osName == OS.WINDOWS) {
-        return `<div class="os-name-header p-2 pt-3">Windows</div>`;
-    }
-}
 
 function getVersionNumberElement(versionNumber) {
     return '<div class="version-number mb-4">'
-        + `<span>v${versionNumber}</span>`
+        + `<span>Desktop Client app v${versionNumber}</span>`
         + '</div>';
 }
 
@@ -81,11 +77,11 @@ function getReleaseVersionChangeLog(changeLogs) {
     return _changeLogs;
 }
 
-function getReleaseSupportedVersions(supportedOsVersions, osName) {
+function getReleaseSupportedVersions(supportedOsVersions) {
 
     let htmlElement = '<div class="supported-os my-3">'
-        + '<div class="tag-label">Supported: </div>'
-        + `<div class="tag-value">${osName} (${supportedOsVersions?.toString()})</div>`
+        + '<div class="tag-label">Supported OS Version: </div>'
+        + `<div class="tag-value">${supportedOsVersions?.toString()}</div>`
         + '</div>';
 
     return supportedOsVersions ? htmlElement : '';
@@ -106,10 +102,10 @@ function getReleaseDate(releaseDate) {
     return releaseDate ? htmlElement : '';
 }
 
-function getDownloadLink(link) {
-    return '<div class="d-flex align-items-center download-link">'
-        + `<a href="${link}">Download</a>`
-        + '<span class="material-icons md-18">download</span>'
+function getDownloadLink(version, extension) {
+    return '<div>'
+        + `<a href="https://asset.${ORIGIN}/desktoplogin/Idemeum_Desktop_Client_v${version}.${extension}" class="d-flex align-items-center download-link">Download`
+        + '<span class="material-icons md-18">download</span></a>'
         + '</div>';
 }
 
@@ -118,32 +114,32 @@ function getDownloadLink(link) {
 
 function addVersionElements(parentElement, desktopLoginApp, osName) {
 
-    var releaseVersionsHTML = "";
+    let releaseVersionsHTML = "";
+    let extension = osName === OS.WINDOWS ? 'exe' : osName === OS.MAC ? 'app' : 'zip'
+
 
     if (desktopLoginApp) {
 
-        // getOSNameElement(desktopLoginApp.osName)
         releaseVersionsHTML += '<div class="mt-3 px-4">'
             + getVersionNumberElement(desktopLoginApp?.version)
             + getReleaseVersionChangeLog(desktopLoginApp?.changeLogs)
             + getReleaseDate(desktopLoginApp?.releaseDate)
-            + getReleaseSupportedVersions(desktopLoginApp?.supportedOsVersions, osName)
-            + getDownloadLink("#")
+            + getReleaseSupportedVersions(desktopLoginApp?.supportedOsVersions)
+            + getDownloadLink(desktopLoginApp?.version, extension)
             + '</div>';
     }
 
+    document.title = `Desktop Client app v${desktopLoginApp?.version} | ${osName}`
     parentElement.innerHTML = releaseVersionsHTML + '</div></div>';
 
 }
 
 function bindListeners() {
+    $('.nav-sub-menu ul').hide();
+
     // open version list dropdown
     $(".nav-sub-menu .nav-sub-menu-item")
         .click(function () {
-
-            //  close all opened nav dropdown
-            $('.nav-sub-menu ul').hide();
-            $('.nav-sub-menu div .material-icons').html('arrow_drop_down');
 
             // open clicked dropdown
             $(this)
@@ -156,7 +152,7 @@ function bindListeners() {
             document.querySelectorAll(".nav-sub-menu-version").forEach(e => e.classList.remove('active'));
 
             this.classList.add('active');
-            this.children[1].children[0].textContent = 'arrow_drop_up';
+            this.children[1].children[0].textContent = (this.children[1].children[0].textContent == 'arrow_drop_down') ? 'arrow_drop_up' : 'arrow_drop_down';
         });
 
     // add listeners to nav items
@@ -165,11 +161,11 @@ function bindListeners() {
         .forEach(element => {
             element.addEventListener('click', function () {
 
-                var data = desktopLoginAppVersionChangeLogDetails
+                var data = desktopAppVersionDetails
                     ?.find(x => x.osName == this.dataset.os)
                     ?.versions
                     ?.find(x => x.version == this.dataset.version);
-                debugger
+
                 if (data) {
                     addVersionElements($versionInfo, data, this.dataset.os);
                 }
@@ -177,8 +173,12 @@ function bindListeners() {
                 document.querySelectorAll(".nav-sub-menu-item").forEach(e => e.classList.remove('active'));
                 document.querySelectorAll(".nav-sub-menu-version").forEach(e => e.classList.remove('active'));
                 this.classList.add('active');
-            })
-        })
+            });
+        });
+
+    $(".nav-sub-menu .nav-sub-menu-item")[0]?.click();
+    $(".nav-sub-menu-version")[0]?.click();
+
 }
 
 
@@ -187,16 +187,16 @@ function getInstallerVersioning() {
     fetchVersioning()
         .then(response => {
 
-            desktopLoginAppVersionChangeLogDetails = response.desktopLoginAppVersionChangeLogDetails;
+            desktopAppVersionDetails = response.desktopAppVersionDetails;
 
             getNavigationItems(
                 $windowsNavElement,
-                desktopLoginAppVersionChangeLogDetails.find(x => x.osName == OS.WINDOWS)
+                desktopAppVersionDetails.find(x => x.osName == OS.WINDOWS)
             );
 
             getNavigationItems(
                 $macNavElement,
-                desktopLoginAppVersionChangeLogDetails.find(x => x.osName == OS.MAC)
+                desktopAppVersionDetails.find(x => x.osName == OS.MAC)
             );
 
             bindListeners();
