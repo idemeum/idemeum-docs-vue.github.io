@@ -5,7 +5,7 @@
 Here are the user flows that we support today. 
 
 |<div style="width:200px">Flow</div>| Description |
-|------|-------------|
+|:------|:-------------|
 |**Tap in / tap out** | Employees can sign in to workstation with a badge tap, and sign out with another badge tap. |
 |**Fast user switching** | When `User A` is signed in to a workstation and `User B` scans the badge, `User A` will be signed out, and `User B` will be signed in.           |
 |**Fast lock / unlock** | Lock the screen manually (do not sign out), and tap the badge to unlock computer. |
@@ -17,7 +17,7 @@ Here are the user flows that we support today.
 Here are the additional features that idemeum supports today for RFID Access.
 
 |<div style="width: 200px">Feature</div>| Description |
-|------|-------------|
+|:------|:-------------|
 |**Network connection detection** | When there is no network connection, and the user scans a badge, application will inform the user that login is not possible until network connection is restored. |
 
 

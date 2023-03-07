@@ -1,4 +1,4 @@
-# RFID Access Architecture
+# RFID Single Sign-On Architecture
 
 ## Overview
 

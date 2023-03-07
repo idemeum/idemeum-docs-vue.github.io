@@ -13,6 +13,7 @@ Download mobile application by scanning the following QR-code.
 | [idemeum for iOS](https://apps.apple.com/us/app/idemeum/id1552180449)              | iOS 14 and above                       |
 | [idemeum for Android](https://play.google.com/store/apps/details?id=com.idemeum.dvmi)          | Android 9 and above                    |
 
+
 ## Browser extension
 
 |     Extension       | Supported browser                       |
@@ -21,13 +22,13 @@ Download mobile application by scanning the following QR-code.
 | [idemeum for Chrome](https://chrome.google.com/webstore/detail/idemeum-for-chrome/pafnbapgmlfnlohampbpnfhijnhfbnab)     | Google Chrome       |
 | [idemeum for Chrome](https://chrome.google.com/webstore/detail/idemeum-for-chrome/pafnbapgmlfnlohampbpnfhijnhfbnab)     | Microsoft Edge         |
 
-## Desktop client
 
-Check our [detailed guides](https://integrations.idemeum.com/tag/desktop-mfa/) to download and set up latest desktop client.
+## Desktop client
 
 |     Desktop MFA client       | Supported OS                       |
 | :-----------------------     |:---------------------------------------|
-| idemeum for Windows | Windows 10 and 11 |
+| [idemeum for Windows](https://docs.idemeum.com/changelog/versioning.html) | Windows 10 and 11 |
+
 
 ## Remote access agent
 
@@ -36,6 +37,7 @@ You can install idemeum agent for Linux with a [simple bash script](https://docs
 |     Remote access agent     | Supported CPU architecture              |
 | :----------------------     |:-------------------------------|
 | Linux agent    | Linux / 64 bit (amd)           |
+
 
 ## Authentication proxy
 

@@ -3,7 +3,7 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { gitPlugin } from '@vuepress/plugin-git'
-
+ 
 module.exports = {
   lang: 'en-US',
   dest: './docs/docs',
@@ -45,13 +45,12 @@ module.exports = {
 		        text: 'Getting Started',
 				collapsible: true,
 		        children: [
-		          {text: 'Introduction', link: '/introduction.html',},
 		          {text: 'Quickstart', link: '/quickstart.html',},
 		          {text: 'Downloads', link: '/downloads.html',},
 		        ],
 		      },
 	      {
-	        text: 'RFID Access',
+	        text: 'RFID Single Sign-On',
 			  collapsible: true,
 	        children: [
 	          {text: 'Overview', link: '/rfid/rfid-overview.html',},
@@ -67,16 +66,30 @@ module.exports = {
 	        text: 'Passwordless MFA',
 			collapsible: true,
 	        children: [
-	          {text: 'Overview',link: '/mfa-overview.html',},
+	          {text: 'Overview',link: '/mfa/mfa-overview.html',},
+			  {text: 'Architecture',link: '/mfa/mfa-architecture.html',},
 			  {text: 'Employee onboarding',link: '/employee-onboarding.html',},
-			  {text: 'Organization rollout',link: '/mfa-organization-rollout.html',},
-			  {text: 'Passwordless MFA for SSO',link: '/passwordless-mfa-sso.html',},
-			  {text: 'Passwordless MFA for VPN / Wi-Fi',link: '/passwordless-mfa-vpn-wifi.html',},
-			  {text: 'Passwordless MFA for Windows',link: '/passwordless-mfa-desktop-windows.html',},
-			  {text: 'Passwordless MFA for vault',link: '/passwordless-mfa-vault.html',},
-			  {text: 'Login experience with MFA',link: '/login-experience.html',},
-			  {text: 'Local biometrics',link: '/local-biometrics.html',},
-			  {text: 'Mobile UI overview',link: '/mobile-ui-overview.html',},
+			  {text: 'MFA for cloud applications',link: '/mfa/mfa-cloud-applications.html',},
+			  {text: 'MFA for workstations',
+			   collapsible: true,
+				children: [
+				  {text: 'Overview',link: '/mfa/desktop-mfa-overview.html',},
+				  {text: 'Install desktop application',link: '/mfa/desktop-app-install.html',},
+				  {text: 'Windows local users machines',link: '/mfa/desktop-mfa-local-users.html',},
+				  {text: 'Windows domain-joined machines',link: '/mfa/desktop-mfa-win-domain-joined.html',},
+				  {text: 'Share access to workstations',link: '/mfa/desktop-mfa-share-access.html',},
+				  {text: 'How to login into workstation',link: '/mfa/desktop-how-to-login.html',},
+				],
+			},
+			  {text: 'MFA for network infrastructure',link: '/mfa/mfa-network-infrastructure.html',},
+			  {text: 'MFA for legacy applications',link: '/mfa/mfa-legacy-applications.html',},
+			  {text: 'MFA for RDP access',link: '/mfa/mfa-rdp.html',},
+			  {text: 'MFA for password vault',link: '/mfa/mfa-password-vault.html',},
+			  {text: 'Organization rollout',link: '/mfa/mfa-organization-rollout.html',},
+			  {text: 'Login experience',link: '/mfa/mfa-login-experience.html',},
+			  {text: 'Local biometrics',link: '/mfa/mfa-local-biometrics.html',},
+			  {text: 'Mobile app overview',link: '/mfa/mobile-ui-overview.html',},
+			  {text: 'FAQ',link: '/mfa/mfa-faq.html',},
 	        ],
 	      },
 	      {
@@ -95,7 +108,7 @@ module.exports = {
 			  {text: 'Security Policies',link: '/security-policies.html',},
 	        ],
 	      },
-		      {
+		  {
 		        text: 'Secure Remote Access',
 				  collapsible: true,
 		        children: [
@@ -116,7 +129,7 @@ module.exports = {
 
 		        ],
 		      },
-		      {
+		  {
 		        text: 'Password Vault',
 				  collapsible: true,
 		        children: [
@@ -129,14 +142,14 @@ module.exports = {
 		          {text: 'Add TOTP for password application',link: '/totp-mfa.html',},
 		        ],
 		      },
-		      {
+		  {
 		        text: 'Authentication proxy',
 				collapsible: true,
 		        children: [
 		          {text: 'Configuration',link: '/authproxy.html',},
 		        ],
 		      },
-		      {
+		  {
 		        text: 'Device recovery',
 				  collapsible: true,
 		        children: [
@@ -147,7 +160,7 @@ module.exports = {
 		          {text: 'Recovery FAQ',link: '/recovery-faq.html',},
 		        ],
 		      },
-		      {
+		  {
 		        text: 'Security',
 				collapsible: true,
 		        children: [
@@ -155,16 +168,14 @@ module.exports = {
 		          {text: 'White paper',link: '/security-whitepaper.html',},
 		        ],
 		      },
-		      {
+		  {
 		        text: 'Cloud Radius',
 				  collapsible: true,
 		        children: [
 		          {text: 'Overview',link: '/cloud-radius-overview.html',},
-		          {text: 'How to set up Radius integration',link: '/how-to-set-up-radius-integration.html',},
-		          {text: 'Cloud Radius IP address',link: '/cloud-radius-ip-address.html',},
 		        ],
 		      },
-		      {
+		  {
 		        text: 'Legal',
 				  collapsible: true,
 		        children: [
@@ -172,7 +183,7 @@ module.exports = {
 		          {text: 'Terms of service',link: '/terms-of-service.html',},
 		        ],
 		      },
-		      {
+		  {
 		        text: 'Changelog',
 				  collapsible: true,
 		        children: [

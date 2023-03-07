@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "e1140c557dccfc6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c70dc34cff188493",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0d60ab09c0c9ae8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a44c5470eceaa41f",
+    "type": "split",
+    "children": [
+      {
+        "id": "75fb583157d5ed54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb276c08847a034f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "17702858d349c70e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bd16b2d7388d5326",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0d45bf72f42b7cb4",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdf8ce2d0894cc2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ce7b6e70c4b9e84",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8dfa9d8a4c83d501",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "441cedd9f1c034c6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "51939c474f674230",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "cb276c08847a034f",
+  "lastOpenFiles": [
+    "docs/404.html",
+    "docs/rfid/rfid-troubleshooting.html",
+    "docs/rfid/rfid-supported-flows.html",
+    "docs/rfid/rfid-shared-account.html",
+    "docs/rfid/rfid-readers.html",
+    "docs/rfid/rfid-overview.html",
+    "docs/rfid/rfid-configuration-guide.html",
+    "docs/rfid/rfid-architecture.html",
+    "docs/rfid",
+    "docs/remote-access/windows-active-domain-configuration.html",
+    "docs/remote-access/secure-remote-access-overview.html",
+    "docs/assets/number-f7d33651.png",
+    "docs/assets/rfid-portfolio-0443f86c.png",
+    "docs/assets/shared-account-62f2afdf.png",
+    "docs/assets/account-setup-2df5c32c.png",
+    "docs/assets/back-to-top-8efcbe56.svg",
+    "docs/assets/mobile-setup-c9db8843.png",
+    "docs/assets/format-8d530e6d.png",
+    "docs/assets/idemeum-remote-access-cert-80a40977.png",
+    "docs/assets/remote-desktop-audit-edb4d70a.png",
+    "docs/assets/remote-desktop-inactive-admin-alert-31c2165e.png",
+    "mfa/desktop-mfa-overview.md",
+    "mfa/mfa-overview.md",
+    "mfa/mfa-architecture.md",
+    "mfa/mfa-login-experience.md",
+    "totp-mfa.md",
+    "mfa/mobile-ui-overview.md",
+    "mfa/mfa-local-biometrics.md",
+    "mfa/mfa-organization-rollout.md",
+    "mfa/mfa-network-infrastructure.md",
+    "passwordless-mfa-vault.md",
+    "mfa/mfa-password-vault.md",
+    "passwordless-mfa-infra.md",
+    "mfa/desktop-mfa-local-users.md",
+    "cloud-radius-overview.md",
+    "how-to-set-up-radius-integration.md",
+    "cloud-radius-ip-address.md",
+    "passwordless-mfa-vpn-wifi.md",
+    "passwordless-mfa-desktop-windows.md",
+    "passwordless-mfa-desktop-mac.md",
+    "mfa/mfa-cloud-applications.md",
+    "employee-onboarding.md",
+    "mfa/desktop-how-to-login.md",
+    "mfa/desktop-mfa-share-access.md",
+    "mfa/desktop-mfa-win-domain-joined.md",
+    "mfa/desktop-app-install.md"
+  ]
+}
