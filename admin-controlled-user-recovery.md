@@ -2,11 +2,6 @@
 
 ## Overview
 
-::: danger Enable admin controlled user recovery
-
-Admin controlled recovery is not enabled for your tenant by default. Navigate to `Security settings` to enable admin recovery for your organization.
-
-:::
 
 While idemeum offers seamless and secure [self-service user recovery](./self-service-user-recovery.html), we realize that there might be situations when users loose or do not store recovery codes. For this purpose we offer a functionality where users can request new device recovery without secure QR-code and wait until admins of the organization approve it.
 
@@ -14,11 +9,8 @@ Here is the high level overview of the process.
 
 ![Admin recovery process](./images/admin-recovery-diagram.png)
 
-## How to enable admin controlled recovery
+Admin controlled recovery is enabled by default for your tenant when the tenant is created.
 
-Navigate to your idemeum admin portal and choose `Security settings` -> `Device recovery`. You can now toggle the switch to enable device recovery for your tenant.
-
-![Admin recovery enable](./images/enable-admin-recovery.png)
 
 ## User experience
 
@@ -41,5 +33,3 @@ Navigate to your idemeum admin portal and choose `Security settings` -> `Device 
 ## Admin controlled recovery demo
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/aaeb8bf62c404b7e87f68254644184d8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-
