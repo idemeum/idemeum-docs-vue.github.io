@@ -1,4 +1,4 @@
-# Shared Account Login
+# Shared acccount login
 
 [[toc]]
 
@@ -10,7 +10,7 @@ For example, let's say there is a Windows workstation where everyone needs to lo
 
 ## Prerequisites
 
-- Before you assign a service account to a workstation, make sure you have successfully completed all configuration steps for RFID access documented [here](./rfid-configuration-guide.html). 
+- Before you assign a service account to a workstation, make sure you have successfully completed all configuration steps for RFID access documented [here](../rfid-quickstart.html). 
 - If you are restricting access to workstation with groups, make sure these groups can be looked up in your user source. For instance, if you want to use Active Directory groups and you are using Azure Active Directory as a user source, make sure you synchronize groups to Azure AD so that idemeum desktop client can validate group ownership for each login.
 
 ::: warning RFID access only

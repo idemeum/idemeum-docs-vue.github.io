@@ -1,4 +1,4 @@
-# RFID Readers
+# RFID readers
 
 [[toc]]
 

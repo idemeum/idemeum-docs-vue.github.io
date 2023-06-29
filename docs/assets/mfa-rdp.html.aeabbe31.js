@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4d8a6f20","path":"/mfa/mfa-rdp.html","title":"Passwordless MFA for RDP Access","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"filePathRelative":"mfa/mfa-rdp.md","git":{"createdTime":1678172817000,"updatedTime":1678172817000}}');export{e as data};

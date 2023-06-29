@@ -1,62 +1,56 @@
-# Employee Onboarding
+# Employee onboarding
+
+[[toc]]
 
 ## Overview
 
-In the industry there are several ways for how users can enroll into Passwordless Authentication. Users can onboard leveraging existing password, use email invitation from the admin, or go with a completely passwordless onboarding with identity verification. 
+Today there are two primary ways to login into idemeum protected resources - with a mobile app or an RFID badge. idemeum provides onboarding for these login methods:
 
-![Onboarding options](./mfa/images/enrollment-options.png)
-At idemeum we made a decision to focus on completely passwordless, self-service MFA onboarding that relies on employee verifying her identity. New hire installs idemeum mobile application, verifies personal email / phone number, navigates to a company portal and scans a QR code. From then on idemeum picks it up - we match a personal claim to a company user record, assign corporate email address, provision SaaS apps, assign infrastructure resources, and more - pretty much everything to give an employee access to all she needs from a single place.
+1. **Self-service mobile onboarding** - employee is not using any links or passwords to onboard. All that is needed is to install idemeum mobile application, verify phone number or email address in the application and scan the login QR-code to access company resources. 
+2. **Manual onboarding with RFID badge** - admin creates a user record in the idemeum cloud directory along with the badge ID number. When employee taps the badge to access the workstation, badge number is verified and employee is onboarded. 
+3. **Password onboarding with RFID badge** - admin does not need to create any user records, as RFID onboarding is done with user credentials. Employee taps the badge, idemeum authenticates the employee with the domain password, and upon success user is onboarded and badge ID is associated with the user record.
 
-## Onboarding configuration
 
-### Identity verification
+## Onboarding examples
 
-As a first step you need to decide **what employees need to verify** to onboard into your organization. idemeum supports email address, phone number, or government document verification. 
+### Self-service mobile onboarding
 
-Navigate to `Admin portal` -> `Settings` -> `Onboarding settings` and choose what you want employees to verify in the mobile application to onboard. 
+Let's say we hire Jimmy Jones, a new employee, and we want Jimmy to use Passwordless MFA to access company resources securely. Here is what we need to do to onboard Jimmy: 
 
-![Onboarding configuration](./mfa/images/configure-onboarding.png)
-Here is how verification will be done:
+*  Admin navigates to idemeum admin portal `Users` -> `User Management`
+*  Admin creates a record for Jimmy, specifies corporate email address as well as personal email address and phone number
 
-| Email address| Phone number|ID document|
-| :------------- |:-------------|:-----------|
-| One time code | SMS | Liveness detection |
+![Onboarding example](./images/core-platform/onboarding-example.png)
 
-### User source configuration
+* Jimmy will receive an invitation to his email addresses to onboard into idemeum
+* Jimmy installs idemeum mobile application and verifies his personal email address or phone number
+* Jimmy navigates to a company portal and scans the login QR-code with idemeum application
+* Jimmy now has access to all company resources
 
-As a second step you will need to integrate your user source with idemeum. For example, if employees will be onboarding with verified phone number, idemeum needs to connect to a user source where employee phone number will be mapped to corporate email address. Let's look at the onboarding example. 
+::: tip What needs to be verified?
 
-::: details New employee onboarding example
-   
-1. Organization hires new employee Alex Jones
-2. Alex installs idemeum mobile application and verifies his phone number
-3. Alex navigates to a company portal and scans a QR-code
-4. At this point idemeum will get verified phone number, look up user record in the user source, and if found will onboard Alex, assign corporate email address to him, and associate mobile device and crypto keys with his identity
-5. From now on Alex can start accessing resources without passwords
+What you want employees to verify in the mobile application is configurable. You can choose email address or phone number. Navigate to `Admin portal` -> `Settings` -> `Onboarding settings` and choose what you want employees to verify in the mobile application to onboard.
 
 :::
 
-As for the user source, you have two options - you can leverage idemeum **built-in cloud directory**, where you can create users, or you can **connect to external user source** such as Azure Active Directory. 
+![Configure onboarding](./images/core-platform/configure-onboarding.png)
 
-Access idemeum `Admin portal` and navigate to `Users`. In the `User source` section you can choose whether you want to leverage idemeum cloud directory (`local` option) or integrate with any of the available user sources. If you decide to integrate with external user source, it needs to have a mapping between a personal claim employees will verify and a corporate email address.
+### Manual onboarding with RFID badge
 
-![User management](./mfa/images/user-management.png)
-If you decide to use local directory, you can start creating users by simply clicking `Add user`. You will need to make sure you enter corporate email address and personal identity claim that will be used for onboarding. 
+Let's say we hired Jimmy Jones and issued him a proximity card to access company offices and printers. Now we want to onboard Jimmy into RFID Single Sign-On. Here is what we need to do to onboard Jimmy:
 
-## Employee onboarding experience
+* Admin navigates to idemeum admin portal `Users` -> `User Management`
+* Admin creates a record for Jimmy and specifies the RFID badge ID in decimal format
 
-Employees go through 3 simple steps to onboard into company passwordless access. 
+![Onboarding example](./images/core-platform/rfid-onboarding-example.png)
 
-### Install idemeum mobile application
+* Jimmy walks to a domain-joined Windows workstation and taps the badge
+* Jimmy is successfully logged in with RFID badge
 
-idemeum is available for both iOS and Android phones. Use the following links to download latest idemeum application from the app store - [IOS App Store](https://apps.apple.com/us/app/idemeum/id1552180449) or [Android Play Store](https://play.google.com/store/apps/details?id=com.idemeum.dvmi).
 
-### Verify identity
+### Password onboarding with RFID badge
+Let's say we hired Jimmy Jones and issued him a proximity card to access company offices and printers. Now we want to onboard Jimmy into RFID Single Sign-On. Here is what we need to do to onboard Jimmy:
 
-Right from the mobile app employee verifies personal identity information, such as phone number, personal email address, or government ID.
-
-If document verification is performed, users take a photo of document (driver's license or passport) and do a face scan to perform liveness detection. Then idemeum performs document validation and matches liveness detection scan with the photo on the document. If successful, document is verified and stored on the mobile device.
-
-### Scan QR-Code to onboard
-
-Once idemeum application is set up, users can navigate to a company idemeum portal (i.e. `company.idemeum.com`) and scan the login QR-code. Once onboarded employee has access to everything she needs in the same portal (SaaS applications, password vault, and infrastructure).
+* Jimmy walks to a domain-joined Windows workstation and taps the badge
+* idemeum desktop client prompts Jimmy to enter domain credentials
+* Upon successful authentication user record is created in idemeum, badge ID is associated with Jimmy's account, and Jimmy can access all company resources

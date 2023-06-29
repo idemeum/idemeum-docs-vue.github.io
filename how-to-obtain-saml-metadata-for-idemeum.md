@@ -2,7 +2,7 @@
 
 ## Overview
 
-[SAML metadata](https://en.wikipedia.org/wiki/SAML_metadata) is the data that describes the information needed to communicate between your SaaS application and idemeum in order to enable Single Sign-On. Based on SAML terminology SaaS application is called **Service Provider (SP)** and idemeum will be **Identity Provider (IDP)**.
+[SAML metadata](https://en.wikipedia.org/wiki/SAML_metadata) is the data that describes the information needed to communicate between your SaaS application and idemeum in order to enable Single Sign-On. Based on SAML terminology SaaS application is called a **Service Provider (SP)** and idemeum will be an **Identity Provider (IDP)**.
 
 Typically you will be asked to provide idemeum SAML metadata when you are configuring SaaS application to connect to idemeum using SAML.
 
@@ -12,7 +12,7 @@ To access SAML metadata for your tenant:
 
 * Navigate to your idemeum admin portal at `https://[your domain].idemeum.com/adminportal`
 * Click `Applications` in the left menu
-* Click `Metadata` in the top menu
+* Click `SAML Metadata` in the top menu
 
 ![Metadata](./images/sso/metadata.png)
 

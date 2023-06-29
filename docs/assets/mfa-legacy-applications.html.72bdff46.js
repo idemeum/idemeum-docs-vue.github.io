@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-51b3aa97","path":"/mfa/mfa-legacy-applications.html","title":"Passwordless MFA for Legacy Applications","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"filePathRelative":"mfa/mfa-legacy-applications.md","git":{"createdTime":1678172817000,"updatedTime":1678172817000}}');export{a as data};
