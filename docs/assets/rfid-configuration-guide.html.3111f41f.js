@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-408ad16a","path":"/rfid/rfid-configuration-guide.html","title":"RFID configuration guide","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"filePathRelative":"rfid/rfid-configuration-guide.md","git":{"createdTime":1675307650000,"updatedTime":1688017170000}}');export{e as data};

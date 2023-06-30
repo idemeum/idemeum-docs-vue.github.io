@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-20d53fd3","path":"/rfid/rfid-user-onboarding.html","title":"RFID user onboarding","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"filePathRelative":"rfid/rfid-user-onboarding.md","git":{"createdTime":null,"updatedTime":null}}');export{e as data};

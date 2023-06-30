@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-77e6e3a3","path":"/rfid/rfid-support-matrix.html","title":"RFID SSO support matrix","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"filePathRelative":"rfid/rfid-support-matrix.md","git":{"createdTime":1688017170000,"updatedTime":1688017170000}}');export{t as data};
